@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased"> 
         <header>
           <nav className="navbar">
             <img src="/Clouuds Logo.svg" alt="Clouuds logo" className="logo" />
