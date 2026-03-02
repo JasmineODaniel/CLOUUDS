@@ -1,18 +1,52 @@
- import './globals.css';  
-import type { ReactNode } from 'react';
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "./globals.css";
+import { Instrument_Serif, Inter } from "next/font/google";
 
-export default function Layout({ children }: { children: ReactNode }) {
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Clouds",
+  description: "Launch your projects with clarity, speed, and zero friction.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: ReactNode;
+}>) {
+  const navLinks = [
+    { label: "Features", href: "#features" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "About", href: "#about" },
+    { label: "Blog", href: "#blog" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
-    <html lang="en">
-      <body className="antialiased"> 
-        <header>
-          <nav className="navbar">
-            <img src="/Clouuds Logo.svg" alt="Clouuds logo" className="logo" />
-            <a className="nav-link" href="features">Features</a>
-            <a className="nav-link" href="pricing">Pricing</a>
-            <a className="nav-link" href="about">About us</a>
-            <a className="nav-link" href="blog">Blog</a>
-            <a className="nav-link" href="contact">Contact</a>
+      <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
+  <body className={`${inter.className} antialiased`}>
+
+        <header className="navbar">
+          <img src="/Clouuds Logo.svg" alt="Clouds logo" className="logo" />
+          <nav className="nav-links" aria-label="Primary">
+            {navLinks.map((link) => (
+              <a key={link.href} className="nav-link" href={link.href}>
+                {link.label}
+              </a>
+            ))}
           </nav>
         </header>
         {children}
