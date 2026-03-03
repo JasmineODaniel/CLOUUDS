@@ -53,6 +53,7 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: -0.56px;
 }
+ 
 
 .nav-link {
   text-decoration: none;
@@ -82,7 +83,7 @@ letter-spacing: -0.56px;
   display: flex;
   flex-direction: column;
   gap: 48px;
-  height: 824px;
+  height: 900px;
 align-self: stretch;
 }
 
@@ -137,11 +138,16 @@ letter-spacing: -2.88px;
 
 
 .hero-text p {
-  max-width: 500px;
-  margin: 0;
-  font-size: 17px;
-  line-height: 1.6;
-  color: #dcdcdc;
+  color: #FFF;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.6px;
+flex: 1 0 0;
+display: flex;
+justify-content: end;
 }
 
 .hero-cta {
@@ -149,16 +155,39 @@ letter-spacing: -2.88px;
 }
 
 .hero-cta button {
-  cursor: pointer;
+  width: 271px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* push ends apart */
+  gap: 10px;
+  padding: 4px 14px;                /* no extra right pad needed */
   border: none;
-  border-radius: 24px;
-  padding: 15px 30px;
-  font-size: 15px;
-  font-weight: 700;
+  border-radius: 16px;
+  box-shadow: 0 0 0 4px #12110F, 0 0 0 2px #676766;
   color: #0f0f0f;
-  background: linear-gradient(180deg, #ff5a2a 0%, #f6381e 100%);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, #ff5a2a 0%, #f6381e 100%); /* gradient only */
+  white-space: nowrap;              /* keep “Book a Demo” on one line */
 }
+
+.cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  flex-shrink: 0;
+  margin-left: auto;                /* pushes arrow to the end */
+}
+
+.cta-arrow img {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
 
 .hero-mockup {
   width: 100%;
@@ -174,6 +203,17 @@ letter-spacing: -2.88px;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
   display: block;
 }
+ .hero-overlay {
+  position: absolute;
+  top: 180px;        
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  z-index: 5;
+}
+
 
 @media (max-width: 1024px) {
   .navbar {
