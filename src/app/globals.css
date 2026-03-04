@@ -1,3 +1,4 @@
+
 :root {
   --background: #0f0f0f;
   --foreground: #f5f5f5;
@@ -16,6 +17,13 @@ body {
 a {
   color: inherit;
 }
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;   /* pick the weight you want */
+  font-style: normal;
+}
+
 
 .navbar {
   position: fixed;
@@ -46,18 +54,20 @@ aspect-ratio: 1/1;
   gap: 28px;
   color: #FFF;
 text-align: right;
-font-family: Inter;
+font-family: var(--font-inter) ;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.56px;
+
 }
  
 
 .nav-link {
   text-decoration: none;
   font-size: 14px;
+font-family: var(--font-inter);
   letter-spacing: -0.2px;
   font-weight: 500;
   color: #f4f4f4;
@@ -171,21 +181,35 @@ justify-content: end;
 }
 
 .cta-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
+  border-radius: 13px;
   background: #F5F5F5;
   flex-shrink: 0;
-  margin-left: auto;                /* pushes arrow to the end */
+  margin-left: 105px; 
+  display: flex;
+height: 33px;
+padding: 12px 14px 12px 16px;
+justify-content: center;
+align-items: center;
+gap: 4px;
 }
 
 .cta-arrow img {
-  width: 14px;
-  height: 14px;
+ width: 24px;
+height: 24px;
+aspect-ratio: 1/1;
   display: block;
+  
+}
+.cta-label{
+  color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.56px;
 }
 
 

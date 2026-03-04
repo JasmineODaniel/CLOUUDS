@@ -13,6 +13,7 @@ const instrumentSerif = Instrument_Serif({
 
 const inter = Inter({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // list only the weights you use
   variable: "--font-inter",
   display: "swap",
 });
@@ -22,11 +23,7 @@ export const metadata: Metadata = {
   description: "Launch your projects with clarity, speed, and zero friction.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const navLinks = [
     { label: "Features", href: "#features" },
     { label: "Pricing", href: "#pricing" },
@@ -36,9 +33,8 @@ export default function RootLayout({
   ];
 
   return (
-      <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
-  <body className={`${inter.className} antialiased`}>
-
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
+      <body className={`${inter.className} antialiased`}>
         <header className="navbar">
           <img src="/Clouuds Logo.svg" alt="Clouds logo" className="logo" />
           <nav className="nav-links" aria-label="Primary">
@@ -54,3 +50,4 @@ export default function RootLayout({
     </html>
   );
 }
+
