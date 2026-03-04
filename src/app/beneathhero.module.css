@@ -1,0 +1,17 @@
+.beneath-hero {
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 38.488px;
+align-self: stretch;
+}
+.Logo1 {
+ width: 134.975px;
+height: 32.073px;
+}
+.Logo2 {
+ width: 134.975px;
+ width: 128.293px;
+height: 25.659px;
+mix-blend-mode: luminosity;
+}

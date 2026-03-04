@@ -1,4 +1,4 @@
-// clouds-fresh/src/app/page.tsx
+import { BeneathHero } from "./beneathhero";
 export default function Home() {
   return (
     <main className="hero-section">
@@ -32,5 +32,6 @@ export default function Home() {
         <img src="/REDESIGN.png" alt="Clouds app dashboard mockup" />
       </div>
     </main>
+    
   );
 }
