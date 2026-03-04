@@ -6,7 +6,7 @@ export default function Home() {
         <div className="hero-text">
           <h1>
             Launch your <em>projects</em> with clarity,
-            <br />
+            <br /> 
             speed, and zero friction.
           </h1>
           <div className="hero-overlay">
