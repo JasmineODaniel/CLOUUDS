@@ -1,4 +1,12 @@
 import { BeneathHero } from "./beneathhero";
+import { Mission } from "./mission";
+import { Engineered } from "./engineered";
+import { GetStarted } from "./getstarted";
+import { AboveTheNoise } from "./abovethenoice";
+import { Pricing } from "./pricing";
+import { Blog } from "./blog";
+import { FAQ } from "./faq";
+import { Footer } from "./footer";
 
 export default function Home() {
   return (
@@ -34,6 +42,14 @@ export default function Home() {
       </main>
 
       <BeneathHero />
+      <Mission />
+      <Engineered />
+      <GetStarted />
+      <AboveTheNoise />
+      <Pricing />
+      <Blog />
+      <FAQ />
+      <Footer />
     </>
   );
 }
