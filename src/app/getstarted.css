@@ -1,0 +1,110 @@
+/* ── GET STARTED SECTION ── */
+.getstarted-section {
+  padding: 96px 72px;
+  background: #F8F8F8;
+}
+
+.getstarted-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.getstarted-title {
+  font-family: var(--font-instrument-serif), serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -2.24px;
+  color: #12110F;
+  margin-bottom: 16px;
+}
+
+.getstarted-title em {
+  color: rgba(18,17,15,0.32);
+  font-style: italic;
+}
+
+.getstarted-sub {
+  color: #7B7A78;
+  font-family: var(--font-inter);
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  max-width: 480px;
+  margin-bottom: 64px;
+}
+
+/* Big center image area */
+.getstarted-visual {
+  position: relative;
+  width: 100%;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.getstarted-mockup {
+  width: 100%;
+  max-width: 860px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.12);
+  background: #1a1a1a;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.15);
+  font-family: var(--font-inter);
+  font-size: 13px;
+}
+
+.getstarted-mockup img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Steps row */
+.getstarted-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.step-number {
+  font-family: var(--font-instrument-serif), serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: rgba(18,17,15,0.12);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.step-title {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  font-weight: 600;
+  color: #12110F;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  color: #7B7A78;
+  line-height: 20px;
+  letter-spacing: -0.26px;
+}
+
+@media (max-width: 1024px) {
+  .getstarted-steps { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .getstarted-section { padding: 60px 20px; }
+  .getstarted-title { font-size: 36px; line-height: 44px; }
+  .getstarted-steps { grid-template-columns: 1fr; }
+}
