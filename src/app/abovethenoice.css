@@ -1,0 +1,218 @@
+/* ── ABOVE THE NOISE SECTION ── */
+.noise-section {
+  padding: 96px 72px;
+  background: #FFFFFF;
+}
+
+.noise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.noise-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #FFF;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 20px;
+}
+
+.noise-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FF5A2A;
+}
+
+.noise-badge-text {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  font-weight: 500;
+  color: #12110F;
+  letter-spacing: -0.26px;
+}
+
+.noise-title {
+  font-family: var(--font-instrument-serif), serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -2.24px;
+  color: #12110F;
+  margin-bottom: 16px;
+}
+
+.noise-title em {
+  color: rgba(18,17,15,0.32);
+  font-style: italic;
+}
+
+.noise-desc {
+  color: #7B7A78;
+  font-family: var(--font-inter);
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  max-width: 480px;
+  margin-bottom: 56px;
+}
+
+/* Main visual — big cloud/app image */
+.noise-visual {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  position: relative;
+  min-height: 380px;
+  background: linear-gradient(135deg, #0a9396 0%, #005f73 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noise-visual img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+}
+
+.noise-visual-placeholder {
+  color: rgba(255,255,255,0.2);
+  font-family: var(--font-inter);
+  font-size: 13px;
+}
+
+/* Overlay card on image */
+.noise-overlay-card {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.noise-overlay-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #FF5A2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.noise-overlay-title {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  font-weight: 600;
+  color: #12110F;
+  letter-spacing: -0.26px;
+}
+
+.noise-overlay-sub {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  color: #7B7A78;
+  margin-top: 2px;
+}
+
+/* Scrolling arrows pagination */
+.noise-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+
+.noise-page-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #E8E8E8;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.noise-page-btn:hover,
+.noise-page-btn.active {
+  background: #12110F;
+  border-color: #12110F;
+}
+
+.noise-page-btn svg path {
+  stroke: #12110F;
+}
+
+.noise-page-btn:hover svg path,
+.noise-page-btn.active svg path {
+  stroke: #FFF;
+}
+
+/* Feature cards row */
+.noise-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.noise-card {
+  background: #F8F8F8;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #F0F0F0;
+}
+
+.noise-card-eyebrow {
+  font-family: var(--font-inter);
+  font-size: 11px;
+  font-weight: 600;
+  color: #7B7A78;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.noise-card-title {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 600;
+  color: #12110F;
+  letter-spacing: -0.28px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.noise-card-desc {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  color: #7B7A78;
+  letter-spacing: -0.26px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .noise-cards { grid-template-columns: repeat(2, 1fr); }
+  .noise-title { font-size: 40px; line-height: 48px; }
+}
+
+@media (max-width: 640px) {
+  .noise-section { padding: 60px 20px; }
+  .noise-title { font-size: 32px; line-height: 40px; }
+  .noise-cards { grid-template-columns: 1fr; }
+}
