@@ -4,14 +4,19 @@ export function Mission() {
   return (
     <section className="mission-section" id="features">
       <div className="mission-container">
-
         <div className="mission-header">
           <div className="mission-badge">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <rect x="1" y="1" width="5" height="5" fill="#FF5A2A" />
-              <rect x="8" y="1" width="5" height="5" fill="#FF5A2A" opacity="0.6" />
-              <rect x="1" y="8" width="5" height="5" fill="#FF5A2A" opacity="0.6" />
-              <rect x="8" y="8" width="5" height="5" fill="#FF5A2A" opacity="0.3" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M6.0625 2.875C6.48109 2.875 6.89558 2.95745 7.28231 3.11763C7.66903 3.27782 8.02042 3.51261 8.3164 3.8086C8.61239 4.10458 8.84718 4.45597 9.00737 4.8427C9.16755 5.22942 9.25 5.64391 9.25 6.0625V9.25H6.0625C5.21712 9.25 4.40637 8.91418 3.8086 8.3164C3.21083 7.71863 2.875 6.90788 2.875 6.0625C2.875 5.21712 3.21083 4.40637 3.8086 3.8086C4.40637 3.21082 5.21712 2.875 6.0625 2.875ZM6.0625 10.75H9.25V13.9375C9.25 14.5679 9.06306 15.1842 8.71281 15.7084C8.36256 16.2326 7.86474 16.6411 7.28231 16.8824C6.69987 17.1236 6.05897 17.1867 5.44065 17.0638C4.82234 16.9408 4.25438 16.6372 3.8086 16.1914C3.36282 15.7456 3.05924 15.1777 2.93625 14.5594C2.81326 13.941 2.87638 13.3001 3.11764 12.7177C3.35889 12.1353 3.76744 11.6374 4.29162 11.2872C4.8158 10.9369 5.43207 10.75 6.0625 10.75ZM13.9375 2.875C14.7829 2.875 15.5936 3.21082 16.1914 3.8086C16.7892 4.40637 17.125 5.21712 17.125 6.0625C17.125 6.90788 16.7892 7.71863 16.1914 8.3164C15.5936 8.91418 14.7829 9.25 13.9375 9.25H10.75V6.0625C10.75 5.21712 11.0858 4.40637 11.6836 3.8086C12.2814 3.21082 13.0921 2.875 13.9375 2.875ZM10.75 10.75H13.9375C14.5679 10.75 15.1842 10.9369 15.7084 11.2872C16.2326 11.6374 16.6411 12.1353 16.8824 12.7177C17.1236 13.3001 17.1867 13.941 17.0638 14.5594C16.9408 15.1777 16.6372 15.7456 16.1914 16.1914C15.7456 16.6372 15.1777 16.9408 14.5594 17.0638C13.941 17.1867 13.3001 17.1236 12.7177 16.8824C12.1353 16.6411 11.6374 16.2326 11.2872 15.7084C10.9369 15.1842 10.75 14.5679 10.75 13.9375V10.75Z"
+                fill="#FF5132"
+              />
             </svg>
             <span className="mission-badge-text">Features</span>
           </div>
@@ -19,143 +24,122 @@ export function Mission() {
             Mission <span>Control</span> for Your Workflow.
           </h2>
           <p className="mission-description">
-            From takeoff to landing, stay in control with tools for tracking,
-            collaboration, and automated helpdesk tracking.
+            From takeoff to landing, stay in control with intuitive task
+            management, team collaboration, and automated progress tracking.
           </p>
         </div>
 
         <div className="mission-grid">
+          {/* Top row: three cards; CTA slot kept empty for alignment */}
+          <article className="mission-card card-tasks" style={{ gridArea: "card1" }}>
+            <div className="pill-stack">
+              <button className="pill pill-ghost" type="button">
+                <span className="pill-icon arrow">&#8594;</span>
+                <span>30 progress</span>
+              </button>
+              <button className="pill pill-solid" type="button">
+                <span className="pill-icon check">&#10003;</span>
+                <span>Completed</span>
+              </button>
+            </div>
+            <div className="card-copy">
+              <h3 className="card-title">Stay on Top of Projects</h3>
+              <p className="card-desc">Organize and track tasks.</p>
+            </div>
+          </article>
 
-          {/* Card 1: EaseQA */}
-          <div className="mission-card card-easeqa">
-            <div className="card-icon" style={{ background: "#F0F0F0" }}>
-              <svg className="card-icon-svg" viewBox="0 0 18 18" fill="none">
-                <rect x="2" y="2" width="6" height="6" rx="1.5" fill="#12110F" opacity="0.5" />
-                <rect x="10" y="2" width="6" height="6" rx="1.5" fill="#12110F" opacity="0.5" />
-                <rect x="2" y="10" width="6" height="6" rx="1.5" fill="#12110F" opacity="0.5" />
-                <rect x="10" y="10" width="6" height="6" rx="1.5" fill="#12110F" opacity="0.5" />
-              </svg>
+          <article className="mission-card card-profile" style={{ gridArea: "card2" }}>
+            <div className="profile-frame">
+              <div className="profile-dots left"></div>
+              <div className="profile-avatar" aria-label="Profile photo placeholder"></div>
+              <div className="profile-dots right"></div>
             </div>
-            <h3 className="card-title">Stay on Top of Projects</h3>
-            <p className="card-desc">Organize and track tasks.</p>
-            <div className="easeqa-content">
-              <div className="easeqa-logo">
-                <div className="easeqa-square sq1"></div>
-                <div className="easeqa-square sq2"></div>
-                <div className="easeqa-square sq3"></div>
-                <div className="easeqa-square sq4"></div>
-              </div>
-              <div>
-                <div className="easeqa-name">EaseQA</div>
-                <div className="easeqa-msg">Great work, Team! Launch looks solid. 🚀</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2: Progress */}
-          <div className="mission-card card-progress">
-            <div className="card-icon" style={{ background: "#FFF5F2" }}>
-              <svg className="card-icon-svg" viewBox="0 0 18 18" fill="none">
-                <circle cx="9" cy="9" r="6" stroke="#FF5A2A" strokeWidth="2" />
-                <path d="M9 5v4l2.5 2.5" stroke="#FF5A2A" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </div>
-            <h3 className="card-title">Track Progress & Insights</h3>
-            <p className="card-desc">Stay informed with analytics.</p>
-            <div className="progress-chart">
-              <div className="progress-circle-wrap">
-                <svg width="120" height="120" viewBox="0 0 120 120">
-                  <circle cx="60" cy="60" r="54" fill="none" stroke="#F0F0F0" strokeWidth="8" />
-                  <circle
-                    cx="60" cy="60" r="54"
-                    fill="none" stroke="#FF5A2A" strokeWidth="8"
-                    strokeDasharray="339.292" strokeDashoffset="84.823"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <div className="progress-inner">
-                  <div className="progress-percent">75%</div>
-                  <div className="progress-label">Complete</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 3: Seamless */}
-          <div className="mission-card card-seamless">
-            <div className="card-icon" style={{ background: "#F0F7FF" }}>
-              <svg className="card-icon-svg" viewBox="0 0 18 18" fill="none">
-                <rect x="2" y="3" width="14" height="13" rx="2" stroke="#4D8EFF" strokeWidth="1.5" />
-                <path d="M2 7h14" stroke="#4D8EFF" strokeWidth="1.5" />
-                <path d="M6 2v2M12 2v2" stroke="#4D8EFF" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </div>
-            <h3 className="card-title">A Seamless Experience</h3>
-            <p className="card-desc">Growth, agile, explorative design.</p>
-            <div className="seamless-header">
-              <span className="seamless-date">Jan 17</span>
-              <span className="seamless-time">9:00 AM</span>
-            </div>
-            <div className="seamless-list">
-              <div className="seamless-item">
-                <div className="checkbox"></div>
-                <span className="seamless-item-text">Kick-off Meeting</span>
-              </div>
-              <div className="seamless-item">
-                <div className="checkbox"></div>
-                <span className="seamless-item-text">New Website</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4: Profile */}
-          <div className="mission-card card-profile">
-            {/* Replace with: <img src="/profile-avatar.jpg" alt="Profile" className="profile-avatar" /> */}
-            <div className="profile-avatar-placeholder"></div>
             <h3 className="card-title">Assign Tasks with Clarity</h3>
             <p className="card-desc">Easily assign and manage tasks.</p>
-            <div className="priority-badge">
-              <div className="priority-dot"></div>
-              <span className="priority-text">High Priority</span>
-            </div>
-          </div>
+          </article>
 
-          {/* Card 5: Upcoming */}
-          <div className="mission-card card-upcoming">
-            <div className="card-icon" style={{ background: "#F0F7FF" }}>
-              <svg className="card-icon-svg" viewBox="0 0 18 18" fill="none">
-                <path d="M4 9l3 3 7-7" stroke="#4D8EFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+          <article className="mission-card card-upcoming" style={{ gridArea: "card3" }}>
+            <div className="upcoming-header">
+              <div className="tick"></div>
+              <span>Upcoming</span>
             </div>
-            <h3 className="card-title">Upcoming</h3>
-            <p className="card-desc">Review Designs</p>
-            <div className="seamless-header" style={{ marginTop: "16px" }}>
-              <span className="seamless-date">Today</span>
-            </div>
-            <div className="seamless-list">
-              <div className="seamless-item">
-                <div className="checkbox"></div>
-                <span className="seamless-item-text">Going</span>
+            <div className="upcoming-card">
+              <div className="pill pill-ghost pill-wide">Review Designs</div>
+              <div className="upcoming-row">
+                <span className="pill-dot"></span>
+                <span className="pill-label">Doing</span>
+                <span className="arrow-min">&#8594;</span>
               </div>
             </div>
-          </div>
+            <h3 className="card-title">Set Priorities &amp; Deadlines</h3>
+            <p className="card-desc">Keep projects on track.</p>
+          </article>
 
-          {/* Card 6: CTA */}
-          <div className="mission-card card-cta">
-            <div>
-              <h3 className="cta-card-title">Get Realtime & Operational Updates</h3>
-              <p className="cta-card-desc">
-                Our refined and purposeful project management is actually fueled by real users.
-              </p>
+          <div className="cta-spacer" style={{ gridArea: "spacer" }} aria-hidden="true"></div>
+
+          {/* Bottom row: three cards plus CTA in 4th slot */}
+          <article className="mission-card card-chat" style={{ gridArea: "card4" }}>
+            <div className="chat-bubble">
+              <div className="chat-avatar"></div>
+              <div className="chat-content">
+                <div className="chat-name">Feebricks</div>
+                <div className="chat-text">Great work, Team! Launch ready...</div>
+              </div>
             </div>
-            <button className="cta-card-btn" type="button">
-              <span className="cta-card-btn-text">It&apos;s Free!</span>
-              <svg className="cta-card-arrow" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="#12110F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-          </div>
+            <div className="chat-icons">
+              <span className="icon small"></span>
+              <span className="icon medium"></span>
+              <span className="icon large"></span>
+            </div>
+            <div className="card-copy">
+              <h3 className="card-title">Collaborate Without the Chaos</h3>
+              <p className="card-desc">Chat, comment, and share files.</p>
+            </div>
+          </article>
 
+          <article className="mission-card card-progress" style={{ gridArea: "card5" }}>
+            <div className="progress-ring">
+              <div className="ring-center">
+                <div className="ring-number">82%</div>
+                <div className="ring-label">Progress</div>
+              </div>
+            </div>
+            <div className="card-copy">
+              <h3 className="card-title">Track Progress &amp; Insights</h3>
+              <p className="card-desc">Stay informed with analytics.</p>
+            </div>
+          </article>
+
+          <article className="mission-card card-schedule" style={{ gridArea: "card6" }}>
+            <div className="seamless-left">
+              <div className="date-stamp">Jan 12</div>
+              <div className="seamless-item">
+                <span className="bullet"></span>
+                <span>Kick-off Meeting</span>
+              </div>
+              <div className="seamless-item">
+                <span className="bullet"></span>
+                <span>New Website</span>
+              </div>
+            </div>
+            <div className="card-copy">
+              <h3 className="card-title">A Seamless Experience</h3>
+              <p className="card-desc">Smooth, sleek, responsive design.</p>
+            </div>
+          </article>
+
+          <article className="mission-card card-cta" style={{ gridArea: "cta" }}>
+            <div className="cta-content">
+              <p className="cta-eyebrow">Get onboard and experience a project management system that actually keeps up with you</p>
+              <div className="cta-inline">
+                <span className="cta-free">It&apos;s Free!</span>
+                <button type="button" className="cta-button">
+                  <span>Book a Demo</span>
+                  <span className="cta-arrow">&#8594;</span>
+                </button>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
