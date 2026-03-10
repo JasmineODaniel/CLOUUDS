@@ -1,6 +1,6 @@
 /* ── MISSION CONTROL SECTION ── */
 .mission-section {
-  position: relative;
+  position: relative; 
   padding: 80px 72px;
   background: linear-gradient(180deg, #FFF 0%, #F8F8F8 100%);
 }
