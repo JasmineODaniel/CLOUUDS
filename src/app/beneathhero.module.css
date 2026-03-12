@@ -1,13 +1,141 @@
 .beneathHero {
+  position: relative;
+  margin-top: -90px;           /* overlap hero; tweak to taste */
+  padding: 60px 72px 48px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 38px; 
-  align-self: stretch;
+  gap: 28px;
+  background:
+   linear-gradient(
+    180deg,
+    transparent 0%,
+    #FFF 20%
+  );
+  
+  /* Horizontal fade for logos */
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
 }
 
-.logo {
-  max-width: 140px;
-  height: auto;
+
+/* Soft haze with transparent edges and top */
+.beneathHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 160% at 50% 20%, rgba(255,255,255,0.55), rgba(255,255,255,0) 70%),
+    linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%),
+    linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 55%);
+  mix-blend-mode: screen;      /* lets hero show through */
+  pointer-events: none;
+  opacity: 0.9;                /* lower for more peek-through */
+}
+
+
+/* Individual tweaks */
+.logo6 { 
+  width: 134.975px;
+height: 32.073px;
+mix-blend-mode: luminosity;
+ }
+.logo5 { width: 128.293px;
+height: 25.659px;
+mix-blend-mode: luminosity;
+ }
+.logo4 { width: 123.482px;
+height: 21.649px;
+mix-blend-mode: luminosity;
+ }
+.logo3 { width: 137.113px;
+height: 25.659px;
+mix-blend-mode: luminosity;
+ }
+.logo2 { width: 123.482px;
+height: 35.28px;
+mix-blend-mode: luminosity;
+ }
+.logo1 { width: 129.095px;
+height: 35.28px;
+mix-blend-mode: luminosity;
+ }
+
+.wrap {
+  position: relative;
+  padding: 72px 32px 64px;
+  text-align: center;
+  background: linear-gradient(180deg, #F5F5F5 0%, #FFF 100%);
+}
+
+/* soft white haze */
+.wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 180% at 90% 15%, rgba(255,255,255,0.7), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 36px;
+  opacity: 50%;
+   mix-blend-mode: luminosity;
+
+}
+
+.logos img {
+  max-height: 24px;
+  filter: grayscale(100%);
   mix-blend-mode: luminosity;
+}
+
+.title {
+  font-family: var(--font-instrument-serif, serif);
+  font-size: clamp(64px, 9vw, 160px);
+  font-weight: 400;
+  color: #dcdcdc;
+  text-shadow:
+    0 8px 24px rgba(0,0,0,0.12),
+    0 0 0 6px rgba(255,255,255,0.8);
+  margin: 0 0 28px;
+}
+.titleImage {
+  fill: linear-gradient(0deg, #12110F 0%, #12110F 100%), lightgray -154.537px -182.399px / 137.391% 319.04% no-repeat;
+stroke-width: 4px;
+stroke: #FFF;
+background-blend-mode: color, normal;
+filter: drop-shadow(0 4px 24px #E8E8E8);
+width: 838.48px;
+height: 239.68px;
+padding-top: 40px;
+}
+
+
+.tagline {
+color: #7B7A78;
+text-align: center;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 125% */
+letter-spacing: -2.56px;
+width: 896px;
+margin: 0 auto 48px;
 }
