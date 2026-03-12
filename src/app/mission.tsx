@@ -23,62 +23,67 @@ export function Mission() {
           <h2 className="mission-title">
             Mission <span>Control</span> for Your Workflow.
           </h2>
+        </div>
+
+        <div className="mission-row">
           <p className="mission-description">
-            From takeoff to landing, stay in control with intuitive task
-            management, team collaboration, and automated progress tracking.
+            From takeoff to landing, stay in control <br />
+            with intuitive task management, team <br />
+            collaboration, and automated progress <br />
+            tracking.
           </p>
+
+          <div className="mission-cards">
+            <article className="mission-card card-tasks">
+              <div className="pill-stack">
+                <div className="pill pill-ghost">
+                  <span className="pill-icon arrow">&#8594;</span>
+                  <span>30 progress</span>
+                </div>
+                <div className="pill pill-solid">
+                  <span className="pill-icon check">&#10003;</span>
+                  <span>Completed</span>
+                </div>
+              </div>
+              <div className="card-copy">
+                <h3 className="card-title">Stay on Top of Projects</h3>
+                <p className="card-desc">Organize and track tasks.</p>
+              </div>
+            </article>
+
+            <article className="mission-card card-profile">
+              <div className="profile-frame">
+                <div className="profile-dots left"></div>
+                <div className="profile-avatar" aria-label="Profile photo placeholder"></div>
+                <div className="profile-dots right"></div>
+              </div>
+              <h3 className="card-title">Assign Tasks with Clarity</h3>
+              <p className="card-desc">Easily assign and manage tasks.</p>
+            </article>
+
+            <article className="mission-card card-upcoming">
+              <div className="upcoming-header">
+                <div className="tick"></div>
+                <span>Upcoming</span>
+              </div>
+              <div className="upcoming-card">
+                <div className="pill pill-ghost pill-wide">Review Designs</div>
+                <div className="upcoming-row">
+                  <span className="pill-dot"></span>
+                  <span className="pill-label">Doing</span>
+                  <span className="arrow-min">&#8594;</span>
+                </div>
+              </div>
+              <h3 className="card-title">Set Priorities &amp; Deadlines</h3>
+              <p className="card-desc">Keep projects on track.</p>
+            </article>
+          </div>
         </div>
 
         <div className="mission-grid">
-          {/* Top row: three cards; CTA slot kept empty for alignment */}
-          <article className="mission-card card-tasks" style={{ gridArea: "card1" }}>
-            <div className="pill-stack">
-              <button className="pill pill-ghost" type="button">
-                <span className="pill-icon arrow">&#8594;</span>
-                <span>30 progress</span>
-              </button>
-              <button className="pill pill-solid" type="button">
-                <span className="pill-icon check">&#10003;</span>
-                <span>Completed</span>
-              </button>
-            </div>
-            <div className="card-copy">
-              <h3 className="card-title">Stay on Top of Projects</h3>
-              <p className="card-desc">Organize and track tasks.</p>
-            </div>
-          </article>
-
-          <article className="mission-card card-profile" style={{ gridArea: "card2" }}>
-            <div className="profile-frame">
-              <div className="profile-dots left"></div>
-              <div className="profile-avatar" aria-label="Profile photo placeholder"></div>
-              <div className="profile-dots right"></div>
-            </div>
-            <h3 className="card-title">Assign Tasks with Clarity</h3>
-            <p className="card-desc">Easily assign and manage tasks.</p>
-          </article>
-
-          <article className="mission-card card-upcoming" style={{ gridArea: "card3" }}>
-            <div className="upcoming-header">
-              <div className="tick"></div>
-              <span>Upcoming</span>
-            </div>
-            <div className="upcoming-card">
-              <div className="pill pill-ghost pill-wide">Review Designs</div>
-              <div className="upcoming-row">
-                <span className="pill-dot"></span>
-                <span className="pill-label">Doing</span>
-                <span className="arrow-min">&#8594;</span>
-              </div>
-            </div>
-            <h3 className="card-title">Set Priorities &amp; Deadlines</h3>
-            <p className="card-desc">Keep projects on track.</p>
-          </article>
-
-          <div className="cta-spacer" style={{ gridArea: "spacer" }} aria-hidden="true"></div>
 
           {/* Bottom row: three cards plus CTA in 4th slot */}
-          <article className="mission-card card-chat" style={{ gridArea: "card4" }}>
+          <article className="mission-card card-chat">
             <div className="chat-bubble">
               <div className="chat-avatar"></div>
               <div className="chat-content">
@@ -97,7 +102,7 @@ export function Mission() {
             </div>
           </article>
 
-          <article className="mission-card card-progress" style={{ gridArea: "card5" }}>
+          <article className="mission-card card-progress">
             <div className="progress-ring">
               <div className="ring-center">
                 <div className="ring-number">82%</div>
@@ -110,7 +115,7 @@ export function Mission() {
             </div>
           </article>
 
-          <article className="mission-card card-schedule" style={{ gridArea: "card6" }}>
+          <article className="mission-card card-schedule">
             <div className="seamless-left">
               <div className="date-stamp">Jan 12</div>
               <div className="seamless-item">
@@ -128,7 +133,7 @@ export function Mission() {
             </div>
           </article>
 
-          <article className="mission-card card-cta" style={{ gridArea: "cta" }}>
+          <article className="mission-card card-cta">
             <div className="cta-content">
               <p className="cta-eyebrow">Get onboard and experience a project management system that actually keeps up with you</p>
               <div className="cta-inline">
