@@ -36,14 +36,20 @@ export function Mission() {
           <div className="mission-cards">
             <article className="mission-card card-tasks">
               <div className="pill-stack">
-                <div className="pill pill-ghost">
-                  <span className="pill-icon arrow">&#8594;</span>
-                  <span>30 progress</span>
-                </div>
-                <div className="pill pill-solid">
-                  <span className="pill-icon check">&#10003;</span>
-                  <span>Completed</span>
-                </div>
+              <div className="pill-progress">
+  <span className="pill-icon arrow">
+  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+  <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#7B7A78"/>
+</svg>
+  </span>
+  <div className="pill-input" >30 progress</div>
+</div>
+
+<div className="pill pill-solid">
+  <span className="pill-icon check">✓</span>
+  <span>Completed</span>
+</div>
+
               </div>
               <div className="card-copy">
                 <h3 className="card-title">Stay on Top of Projects</h3>
