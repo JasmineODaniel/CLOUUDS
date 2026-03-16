@@ -45,14 +45,25 @@ export function Mission() {
   <div className="pill-input" >30 progress</div>
 </div>
 
-<div className="pill pill-solid">
-  <span className="pill-icon check">✓</span>
-  <span>Completed</span>
+<div className="pill pill-solid"> 
+  <span className="pill-icon check">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_395_32)" stroke="white"/>
+  <defs>
+    <linearGradient id="paint0_linear_395_32" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5132"/>
+      <stop offset="1" stop-color="#FFCC32"/>
+    </linearGradient>
+  </defs>
+</svg>
+  </span>
+  <span className="pill-icon completed">Completed</span>
 </div>
 
               </div>
+              
               <div className="card-copy">
-                <h3 className="card-title">Stay on Top of Projects</h3>
+                <h3 className="card-titlee">Stay on Top of Projects</h3>
                 <p className="card-desc">Organize and track tasks.</p>
               </div>
             </article>
