@@ -117,6 +117,7 @@ letter-spacing: -0.6px;
 }
 .pill-stack {
   display: flex;
+  flex-direction: column;
 height: 54px;
 padding: 8px 8.5px 8px 12px;
 align-items: center;
@@ -126,6 +127,7 @@ border-radius: 19px;
 border: 2px solid #FFF;
 background: rgba(255, 255, 255, 100);
 width: 199px;
+
 }
 
 /* outer pill */
@@ -178,44 +180,50 @@ background: #F0F0F0;
 
 /* base pills (keep your existing, or ensure these settings) */
 .pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 12px;
-  font-family: Inter, sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: -0.2px;
-  width: max-content;
-}
-
-
-
-.pill-solid {
-display: flex;
+  display: flex;
 height: 54px;
-padding: 8px 17px 8px 72px;
+padding: 8px 17px 8px 12px;
 align-items: center;
 gap: 14px;
 align-self: stretch;
 border-radius: 16px;
 border: 2px solid #FFF;
-background: rgba(255, 255, 255, 0.08);
+background: rgba(255, 255, 255, 100);
 width: 199px;
 }
 
+
+
+.pill-solid {
+
+}
+
 .pill-icon.check {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  font-size: 11px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffefe7;
-  color: #ff5e3a;
-  border: 1px solid rgba(255,255,255,0.5);
+ border-radius: 8px;
+background: rgba(255, 81, 50, 0.08);
+display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+fill: linear-gradient(135deg, #FF5132 0%, #FFCC32 100%);
+stroke-width: 1px;
+stroke: #FFF;
+
+}
+.pill-icon.completed{
+  color: #12110F;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+flex: 1 0 0;
 }
 
 
@@ -226,72 +234,37 @@ width: 199px;
   gap: 8px;
   margin-top: 8px;
 }
-
-.card-tasks,
-.card-profile,
-.card-upcoming {
-  align-items: flex-start;
-  gap: 8px;
-  padding: 24px;
-}
-
-.card-profile {
-  width: 270px;
-  height: 291px;
-  background: radial-gradient(50.17% 50.17% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.56) 100%);
-}
-
-.card-upcoming {
-  width: 270px;
-  height: 292px;
-  background: rgba(255, 255, 255, 0.60);
-}
-
-.card-tasks {
-  width: 270px;
-  height: 291px;
-  background: radial-gradient(50.17% 50.17% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.56) 100%);
-}
-
-.arrow span{
-display: flex;
-height: 37px;
-padding: 10px;
-align-items: center;
-gap: 10px;
-flex: 1 0 0;
-color: #7B7A78;
-leading-trim: both;
-text-edge: cap;
+.card-titlee{
+  color: #12110F;
 font-family: Inter;
-font-size: 14px;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-letter-spacing: -0.56px;
+letter-spacing: -0.64px;
+  align-self: stretch;
+background-color: #7B7A78;
+
+
 }
 
-@media (max-width: 1024px) {
-  .mission-row {
-    grid-template-columns: 1fr;
-  }
-  .mission-cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    justify-content: stretch;
-  }
-  .mission-cards > .mission-card {
-    width: 100%;
-  }
+/* Correct text styles */
+.card-title {
+  color: #12110F;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 1.3;
 }
 
-@media (max-width: 640px) {
-  .mission-cards {
-    grid-template-columns: 1fr;
-  }
-  .mission-cards > .mission-card {
-    width: 100%;
-  }
-  .mission-grid {
-    grid-template-columns: 1fr;
-  }
+.card-desc {
+  color: #4B4A47;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  line-height: 1.5;
+  opacity: 1;
 }
+
