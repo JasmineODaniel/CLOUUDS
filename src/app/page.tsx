@@ -9,7 +9,7 @@ import { FAQ } from "./faq";
 import { Footer } from "./footer";
 
 export default function Home() {
-  return (
+  return (  
     <>
       <main className="hero-section">
         <div className="hero-top">
