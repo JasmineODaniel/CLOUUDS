@@ -4,7 +4,7 @@ import { Engineered } from "./engineered";
 import { GetStarted } from "./getstarted";
 import { AboveTheNoise } from "./abovethenoice";
 import { Pricing } from "./pricing";
-import { Blog } from "./blog";
+import { Blog } from "./blog"; 
 import { FAQ } from "./faq";
 import { Footer } from "./footer";
 
