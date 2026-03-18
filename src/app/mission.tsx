@@ -7,7 +7,7 @@ export function Mission(): JSX.Element {
 
         {/* HEADER */}
         <div className="mission-header">
- 
+
           <div className="mission-badge">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -43,59 +43,41 @@ export function Mission(): JSX.Element {
 
                   <span className="pill-icon">
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="14"
-                      viewBox="0 0 15 14"
-                      fill="none"
-                    >
-                      <path
-                        d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z"
-                        fill="#7B7A78"
-                      />
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+  <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#7B7A78"/>
+</svg>
 
                   </span>
+                 
 
                   <div className="pill-input">
                     30 progress
                   </div>
 
-                </div>
+              
+             
+                  </div>
+
                 <div className="pill-completed">
 
                   <span className="check-icon">
 
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                    >
-                      <circle
-                        cx="10"
-                        cy="10"
-                        r="9"
-                        fill="#FF5132"
-                      />
-
-                      <path
-                        d="M6 10.5L8.5 13L14 7.5"
-                        stroke="white"
-                        strokeWidth="2"
-                      />
-
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_395_32)" stroke="white"/>
+  <defs>
+    <linearGradient id="paint0_linear_395_32" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5132"/>
+      <stop offset="1" stop-color="#FFCC32"/>
+    </linearGradient>
+  </defs>
+</svg>
 
                   </span>
 
                   Completed
                 </div>
 
-              </div>
-
+        </div>
               <div className="card-copy">
                 <h3>Stay on Top of Projects</h3>
                 <p>Organize and track tasks.</p>
@@ -109,11 +91,27 @@ export function Mission(): JSX.Element {
 
               <div className="profile-frame">
 
-                <div className="dot left"></div>
+                
 
-                <div className="profile-avatar"></div>
+                <div className="profile-avatar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18ZM8.1027 12.6L14.4657 6.2361L13.1931 4.9635L8.1027 10.0548L5.5566 7.5087L4.284 8.7813L8.1027 12.6Z" fill="#DDDDDD"/>
+</svg>
+                </div>
+                
+               <div className="avatar-main-wrapper">
+  <img className="profile-avatar-main" src="avatar.png" alt="Profile" />
+  <svg className="avatar-badge" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="#FF5132" stroke="white"/>
+</svg> 
+</div>
+                <div className="profile-avatar2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18ZM8.1027 12.6L14.4657 6.2361L13.1931 4.9635L8.1027 10.0548L5.5566 7.5087L4.284 8.7813L8.1027 12.6Z" fill="#DDDDDD"/>
+</svg>
+                </div>
 
-                <div className="dot right"></div>
+                
 
               </div>
 
@@ -129,6 +127,18 @@ export function Mission(): JSX.Element {
             <article className="mission-card">
 
               <div className="upcoming-card">
+                <div className="upcoming-checkbox">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_464_38)" stroke="white"/>
+  <defs>
+    <linearGradient id="paint0_linear_464_38" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#32A2FF"/>
+      <stop offset="1" stop-color="#3265FF"/>
+    </linearGradient>
+  </defs>
+</svg>
+                  Upcoming
+                </div>
 
                 <div className="pill">Review Designs</div>
 
