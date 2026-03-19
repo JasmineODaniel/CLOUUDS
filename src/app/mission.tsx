@@ -127,8 +127,9 @@ export function Mission(): JSX.Element {
             <article className="mission-card">
 
               <div className="upcoming-card">
-                <div className="upcoming-checkbox">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div className="upcoming-small">
+                  <div className="upcoming-checkbox">
+                   <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_464_38)" stroke="white"/>
   <defs>
     <linearGradient id="paint0_linear_464_38" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
@@ -137,17 +138,23 @@ export function Mission(): JSX.Element {
     </linearGradient>
   </defs>
 </svg>
-                  Upcoming
+                
+                 
+                <span>  Upcoming </span>
                 </div>
+                
 
                 <div className="pill">Review Designs</div>
 
                 <div className="upcoming-row">
-                  <span className="status-dot"></span>
+               
                   <span>Doing</span>
-                  <span>→</span>
+                  <span><svg className="doing-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+  <path d="M9.129 5.0835L5.106 1.0605L6.1665 0L12 5.8335L6.1665 11.667L5.106 10.6065L9.129 6.5835H0V5.0835H9.129Z" fill="#7B7A78"/>
+</svg></span>
                 </div>
 
+              </div>
               </div>
 
               <div className="card-copy">
