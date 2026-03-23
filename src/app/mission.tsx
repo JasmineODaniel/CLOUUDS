@@ -4,7 +4,7 @@ export function Mission(): JSX.Element {
   return (
     <section className="mission-section" id="features">
       <div className="mission-container">
-
+ 
         {/* HEADER */}
         <div className="mission-header">
 
