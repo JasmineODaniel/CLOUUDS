@@ -30,7 +30,7 @@ export function Mission(): JSX.Element {
           <p className="mission-description">
             From takeoff to landing, stay in control with intuitive task
             management, team collaboration, and automated progress tracking.
-          </p>
+          </p>\
 
           <div className="mission-cards">
 
@@ -62,12 +62,12 @@ export function Mission(): JSX.Element {
 
                   <span className="check-icon">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_395_32)" stroke="white"/>
+     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_543_32)" stroke="white"/>
   <defs>
-    <linearGradient id="paint0_linear_395_32" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF5132"/>
-      <stop offset="1" stop-color="#FFCC32"/>
+    <linearGradient id="paint0_linear_543_32" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#FF5132"/>
+      <stop offset="1" stopColor="#FFCC32"/>
     </linearGradient>
   </defs>
 </svg>
@@ -133,8 +133,8 @@ export function Mission(): JSX.Element {
   <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_464_38)" stroke="white"/>
   <defs>
     <linearGradient id="paint0_linear_464_38" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#32A2FF"/>
-      <stop offset="1" stop-color="#3265FF"/>
+      <stop stopColor="#32A2FF"/>
+      <stop offset="1" stopColor="#3265FF"/>
     </linearGradient>
   </defs>
 </svg>
@@ -174,10 +174,20 @@ export function Mission(): JSX.Element {
 
           <article className="mission-card">
             <div className="placeholder"></div>
+<div className="cardfour">
+  <img className="card44" src="card4.png" alt="Feeebrick celebration" />
+  <p className="cardfour-title">Feeebrick</p>
+  <p>Great work, Team! Launch ready... 🎉</p>
+  </div>
+  <div className="smallcard4">
 
+  </div>
             <div className="card-copy">
+
               <h3>Collaborate Without the Chaos</h3>
               <p>Chat, comment, and share files.</p>
+
+          
             </div>
           </article>
 
@@ -213,7 +223,7 @@ export function Mission(): JSX.Element {
             </p>
 
             <button>
-              Book a Demo →
+              Book a Demo
             </button>
 
           </article>
