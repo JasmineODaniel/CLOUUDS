@@ -7,7 +7,7 @@ padding:0;
 .mission-section{
 padding:56px;
 display:flex;
-justify-content:center;
+justify-content:center; 
 background:#F5F5F5;
 border-radius:40px;
 }
@@ -652,6 +652,7 @@ line-height: normal;
 letter-spacing: -0.6px;
 width: 270px;
 height: 51px;
+
 }
   .cta button{
     display: flex;
@@ -673,19 +674,19 @@ line-height: normal;
 letter-spacing: -0.56px;
 position: relative;
   overflow: visible;
+  white-space: nowrap;
   }
   .cta .svg{
   width: 54px;
   height: 33px;
-  margin-left: auto;
+  margin-left: 30px;
   color: #FF4928;
-  padding: 8px;
-  justify-content: center;
 align-items: center;
 display: flex;
 height: 33px;
 border-radius: 13px;
 background: #F5F5F5;
-gap: 4px;
-padding: 8px;
+ justify-content: space-between;   /* push ends apart */
+  gap: 10px;
+  padding: 4px 14px; 
   }
