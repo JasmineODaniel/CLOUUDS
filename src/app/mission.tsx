@@ -239,7 +239,7 @@ export function Mission(): JSX.Element {
       <stop offset="1" stop-color="#12110F"/>
     </linearGradient>
   </defs>
-</svg>New Website Launch</div>
+</svg>New Website </div>
   </div>
 </div>
   </div>
@@ -251,15 +251,18 @@ export function Mission(): JSX.Element {
 
           </article>
 
-          <article className="mission-card cta-card">
+          <article className="cta">
 
             <p>
               Get onboard and experience a project management system that
               actually keeps up with you
             </p>
-
+<h3>It’s Free!</h3>
             <button>
               Book a Demo
+               <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+  <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#FF4928"/>
+</svg>
             </button>
 
           </article>
