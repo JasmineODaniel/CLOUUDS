@@ -576,7 +576,7 @@ box-shadow: 0 4px 34px 0 #E8E8E8;
 margin: 0 0 25px 20px;
 
 }
-.schedule .h4{
+.schedule h4{
   color: #333333;
 leading-trim: both;
 text-edge: cap;
@@ -586,6 +586,8 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 letter-spacing: -0.64px;
+margin-bottom: 10px;
+margin-left: 10px;
 }
 .schedule2{
   display: flex;
@@ -637,3 +639,53 @@ border-radius: 8px;
 background: rgba(131, 131, 131, 0.08);
 margin-top: 5px;
 }
+ .cta{
+ margin-top: 10rem;
+}
+.cta p{
+   color: #7B7A78;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.6px;
+width: 270px;
+height: 51px;
+}
+  .cta button{
+    display: flex;
+width: 172px;
+padding: 4px 30px 4px 14px;
+align-items: center;
+gap: 10px;
+border-radius: 16px;
+background: #FF4928;
+box-shadow: 0 0 0 4px #12110F, 0 0 0 2px #676766;
+color: #FFF;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.56px;
+position: relative;
+  overflow: visible;
+  }
+  .cta .svg{
+  width: 54px;
+  height: 33px;
+  margin-left: auto;
+  color: #FF4928;
+  padding: 8px;
+  justify-content: center;
+align-items: center;
+display: flex;
+height: 33px;
+border-radius: 13px;
+background: #F5F5F5;
+gap: 4px;
+padding: 8px;
+  }
