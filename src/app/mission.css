@@ -602,26 +602,38 @@ width: 216px;
 height: 96px;
 right: 10px;
 }
-.schedule2 .para1{
+.schedule2 .para1,
+.schedule2 .para2 {
   color: #12110F;
-leading-trim: both;
-text-edge: cap;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.56px;
-flex: 1 0 0;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.schedule2 .para2{
-  color: #12110F;
-leading-trim: both;
-text-edge: cap;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.56px;
+.schedule2 .para1 svg{
+  display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+background: rgba(131, 131, 131, 0.08);
+}
+.schedule2 .para2 svg{
+display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+background: rgba(131, 131, 131, 0.08);
+margin-top: 5px;
 }
