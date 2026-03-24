@@ -2,7 +2,7 @@
 box-sizing:border-box;
 margin:0;
 padding:0;
-} 
+}
 
 .mission-section{
 padding:56px;
@@ -374,22 +374,50 @@ height: 11.667px;
 
 }
 .cardfour{
-
   display: flex;
-height: 90px;
-padding: 8px 17px 8px 12px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 12px;
-align-self: stretch;
-border-radius: 16px;
-border: 2px solid #FFF;
-background: rgba(255, 255, 255, 0.08);
-box-shadow: 0 4px 34px 0 #E8E8E8;
-width: 199px;
-height: 90px;
-margin: 0 20px 65px 30px;
+  height: 90px;
+  padding: 8px 17px 8px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 34px 0 #E8E8E8;
+  width: 199px;
+  height: 90px;
+  margin: 0 20px 10px 30px;
+}
+.cardfour-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  
+}
+
+.card44{
+  border-radius: 8px;
+background:  lightgray 50% / cover no-repeat;
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+}
+
+.cardfour-title{
+  
+ 
+  margin: 0;
+  color: #12110F;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
 }
 .cardfour h4{
   color: #12110F;
@@ -410,4 +438,160 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.56px;
+}
+.smallcard4 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 16px;
+border: 2px solid #FFF;
+ background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 4px 34px 0 #E8E8E8;
+  height: 46px;
+  min-width: 90px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.smallcard1,
+.smallcard2,
+.smallcard3 {
+  width: 42px;
+  height: 42px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  position: relative;
+  object-fit: cover;
+}
+
+.smallcard1 {
+  z-index: 1;
+ 
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background:  lightgray 50% / cover no-repeat, rgba(27, 210, 136, 0.11);
+  margin-left: 0;
+}
+
+.smallcard2 {
+  z-index: 3;
+  margin-left: -10px;
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background:  lightgray 50% / cover no-repeat, rgba(27, 210, 136, 0.11);
+}
+
+.smallcard3 {
+  z-index: 4;
+  margin-left: -10px;
+   transform: translateX(-2px);
+   display: flex;
+width: 28px;
+height: 28px;
+padding: 0 4px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background: #FF5132;
+}
+.progress-wrapper{
+  position: relative;
+  width: 200px;
+  margin: 20px auto 0;
+  height: 200px;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 136px;
+  display: block;
+  fill-opacity: white;
+  filter: drop-shadow(0 4px 34px #E8E8E8);
+}
+
+.progress-ring{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.progress-label{
+  color: #7B7A78;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.4px;
+top: 10px;
+
+}
+.progress-value{
+  color: #12110F;
+text-align: center;
+font-family: "Instrument Serif";
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1px;
+}
+.schedule{
+  display: flex;
+width: 224px;
+height: 146px;
+padding: 4px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: -1px;
+border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 4px 34px 0 #E8E8E8;
+margin: 0 0 25px 20px;
+
+}
+.schedule .h4{
+  color: #333333;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.64px;
+}
+.schedule2{
+  display: flex;
+padding: 8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+border-radius: 18px 18px 12px 12px;
+border: 2px solid #F1F1F1;
+background: #FFF;
+box-shadow: 0 -3px 16px 0 #F7F7F7;
+width: 216px;
+height: 96px;
+right: 10px;
 }
