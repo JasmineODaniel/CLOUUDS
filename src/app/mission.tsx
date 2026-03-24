@@ -4,7 +4,7 @@ export function Mission(): JSX.Element {
   return (
     <section className="mission-section" id="features">
       <div className="mission-container">
- 
+
         {/* HEADER */}
         <div className="mission-header">
 
@@ -174,14 +174,22 @@ export function Mission(): JSX.Element {
 
           <article className="mission-card">
             <div className="placeholder"></div>
-<div className="cardfour">
-  <img className="card44" src="card4.png" alt="Feeebrick celebration" />
-  <p className="cardfour-title">Feeebrick</p>
-  <p>Great work, Team! Launch ready... 🎉</p>
-  </div>
-  <div className="smallcard4">
-
-  </div>
+            <div className="cardfour">
+              <div className="cardfour-heading">
+                <img className="card44" src="card4.png" alt="Feeebrick celebration" />
+                <span className="cardfour-title">Feeebrick</span>
+              </div>
+              <p>Great work, Team! Launch ready... 🎉</p>
+            </div>
+            <div className="smallcard4">
+              <img className="smallcard1" src="smallcard2.png" alt="Feeebrick celebration" />
+              <img className="smallcard2" src="smallcard1.png" alt="Feeebrick celebration" />
+              <div className="smallcard3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none">
+  <circle cx="4.5" cy="1.5" r="1.5" fill="white"/>
+  <circle cx="10.5" cy="2.5" r="1.5" fill="white"/>
+  <circle cx="16.5" cy="2.5" r="1.5" fill="white"/>
+</svg></div> 
+            </div>
             <div className="card-copy">
 
               <h3>Collaborate Without the Chaos</h3>
@@ -192,9 +200,14 @@ export function Mission(): JSX.Element {
           </article>
 
           <article className="mission-card">
-            <div className="progress-ring">
-              82%
+            <div className="progress-wrapper">
+              <img src="circle.svg" className="circle" alt="Progress circle" />
+              <div className="progress-ring">
+                <div className="progress-value">82%</div>
+                <div className="progress-label">Progress</div>
+              </div>
             </div>
+
 
             <div className="card-copy">
               <h3>Track Progress & Insights</h3>
@@ -205,11 +218,34 @@ export function Mission(): JSX.Element {
           <article className="mission-card">
 
             <div className="schedule">
-              Jan 12
-            </div>
-
+            <h4> Jan 12</h4> 
+          
+<div className="schedule2"> 
+  <div className="schedule2-item">
+    <div className="para1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
+  <defs>
+    <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B7A78"/>
+      <stop offset="1" stop-color="#12110F"/>
+    </linearGradient>
+  </defs>
+</svg>Kick-off meeting</div>   
+    <div className="para2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
+  <defs>
+    <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B7A78"/>
+      <stop offset="1" stop-color="#12110F"/>
+    </linearGradient>
+  </defs>
+</svg>New Website Launch</div>
+  </div>
+</div>
+  </div>
             <div className="card-copy">
-              <h3>A Seamless Experience</h3>
+              
+              <h3> A Seamless Experience</h3>
               <p>Smooth, sleek, responsive design.</p>
             </div>
 
