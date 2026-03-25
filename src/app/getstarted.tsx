@@ -11,7 +11,7 @@ const steps = [
     title: "Invite Your Team",
     desc: "Add teammates with a single link. Roles and permissions set themselves up automatically.",
   },
-  {
+  { 
     number: "03",
     title: "Launch Your Project",
     desc: "Use a template or start from scratch. Your first board is ready to go immediately.",
