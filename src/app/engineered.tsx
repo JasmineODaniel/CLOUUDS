@@ -5,7 +5,7 @@ const features = [
     boxClass: "orange",
     dotClass: "orange",
     name: "Task Management",
-    text: "Organize work into clear, trackable tasks with deadlines and owners.",
+    text: "Plan work with status, dependencies, and automated reminders for every deadline.",
     tag: "Workflows",
     tagClass: "orange",
   },
@@ -13,7 +13,7 @@ const features = [
     boxClass: "blue",
     dotClass: "blue",
     name: "Team Collaboration",
-    text: "Share updates, comment inline, and keep everyone on the same page.",
+    text: "Share files, comments, and updates right inside the task so nothing gets lost.",
     tag: "Sync",
     tagClass: "blue",
   },
@@ -21,9 +21,25 @@ const features = [
     boxClass: "purple",
     dotClass: "purple",
     name: "Progress Analytics",
-    text: "Visual dashboards that surface the insights you actually need.",
+    text: "Live dashboards track velocity, blockers, and executive-ready KPIs.",
     tag: "Insights",
     tagClass: "purple",
+  },
+  {
+    boxClass: "green",
+    dotClass: "green",
+    name: "Automation Engine",
+    text: "Automate hand-offs, escalations, and status reports without writing a single script.",
+    tag: "Automation",
+    tagClass: "green",
+  },
+  {
+    boxClass: "teal",
+    dotClass: "teal",
+    name: "Security & Controls",
+    text: "Enterprise-grade permissions, audit logs, and data residency keep everything safe.",
+    tag: "Security",
+    tagClass: "teal",
   },
 ];
 
@@ -45,14 +61,15 @@ export function Engineered() {
 
           <div className="engineered-features">
             {features.map((f) => (
-              <div key={f.name} className="feature-col">
+              <article key={f.name} className="feature-col">
+                <div className="feature-cloud"></div>
                 <div className={`card-icon feature-icon-box ${f.boxClass}`}>
                   <div className={`feature-icon-dot ${f.dotClass}`}></div>
                 </div>
                 <div className="feature-name">{f.name}</div>
                 <div className="feature-text">{f.text}</div>
                 <div className={`feature-tag ${f.tagClass}`}>{f.tag}</div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
