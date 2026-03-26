@@ -1,11 +1,11 @@
 .engineered-section {
-  padding: 80px 56px;
+  padding: 80px 24px;
   background: #F5F5F5;
 }
 
 .engineered-container {
-  max-width: 1180px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -70,21 +70,36 @@
 }
 
 /* GRID */
+.engineered-row {
+  display: flex;
+  gap: 32px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
 .engineered-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
 .eng-card {
-  background: white;
-  border-radius: 24px;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  aspect-ratio: 1 / 1;
+  background:white;
+  border-radius:24px;
+border:4px solid #fff;
+min-height:260px;
+overflow:hidden;
+display: flex;
+width: 100%;
+height: 291px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+border-radius: 24px;
+border: 4px solid #FFF;
+  background: radial-gradient(50.17% 50.17% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.56) 100%);
 }
 
 .eng-card--offset {
@@ -101,21 +116,25 @@
 }
 
 .eng-card h3 {
-  color: #12110F;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.64px;
-  line-height: normal;
+
+
+color: #12110F;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.64px;
 }
 
 .eng-card p {
-  color: #7B7A78;
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.56px;
+color: #7B7A78;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.56px;
 }
 
 /* CTA */
@@ -124,9 +143,12 @@
   flex-direction: column;
   gap: 16px;
   max-width: 320px;
+  padding: 16px 0;
+  flex: 0 0 300px;
+  align-self: flex-end;
 }
 
-.engineered-cta p {
+.engineered-cta p { 
   color: #7B7A78;
   font-family: Inter;
   font-size: 15px;
