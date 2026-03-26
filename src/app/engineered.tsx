@@ -25,7 +25,23 @@ export function Engineered() {
         </div>
 
         {/* CARD GRID */}
-        <div className="engineered-grid">
+        <div className="engineered-row">
+          <div className="engineered-cta">
+            <p>Get onboard and experience a project management system that actually keeps up with you.</p>
+            <div className="cta-bottom">
+              <h3>It's Free!</h3>
+              <button className="cta-button">
+                Book a Demo
+                <span className="arrow-pill">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                    <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#FF4928"/>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div className="engineered-grid">
 
           <article className="eng-card">
             <div className="eng-icon">
@@ -48,6 +64,17 @@ export function Engineered() {
                   <linearGradient id="paint0_linear_1_668" x1="46" y1="30" x2="46" y2="63.0705" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#FFA646"/>
                     <stop offset="1" stopColor="#EA7A00"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div className="eng-card__bg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="270" height="226" viewBox="0 0 270 226" fill="none">
+                <path d="M284.961 111.447C284.987 110.468 285 109.486 285 108.5C285 48.5771 236.423 0 176.5 0C138.711 0 105.435 19.3184 86.0073 48.6177C79.9985 47.5542 73.814 47 67.5 47C9.23389 47 -38 94.2339 -38 152.5C-38 210.766 9.23389 258 67.5 258C88.9331 258 108.873 251.609 125.519 240.628C140.681 282.266 180.619 312 227.5 312C287.423 312 336 263.423 336 203.5C336 164.68 315.613 130.621 284.961 111.447Z" fill="url(#paint0_linear_700_262)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_700_262" x1="149" y1="0" x2="149" y2="312" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white"/>
                   </linearGradient>
                 </defs>
               </svg>
@@ -81,6 +108,11 @@ export function Engineered() {
                 </defs>
               </svg>
             </div>
+            <div className="eng-card__bg eng-card__bg--second">
+              <svg xmlns="http://www.w3.org/2000/svg" width="270" height="215" viewBox="0 0 270 215" fill="none">
+                <path d="M15.2626 0C67.767 0 113.014 31.0644 133.633 75.8154C144.001 76.5695 153.821 79.3014 162.717 83.6348C179.151 59.421 206.904 43.5119 238.374 43.5117C288.838 43.5117 329.749 84.4212 329.749 134.886C329.749 185.35 288.839 226.261 238.374 226.261C219.026 226.261 201.082 220.246 186.31 209.986C171.712 225.685 150.878 235.507 127.75 235.507C117.574 235.507 107.842 233.604 98.8895 230.138C76.2624 249.104 47.097 260.526 15.2626 260.526C-56.6796 260.526 -115 202.205 -115 130.263C-115 58.3207 -56.6795 0.000164974 15.2626 0Z" fill="white"/>
+              </svg>
+            </div>
             <h3>Clarity at Every Stage</h3>
             <p>Keep projects structured with clear tasks, priorities, and real-time progress tracking.</p>
           </article>
@@ -108,6 +140,11 @@ export function Engineered() {
                     <stop offset="1" stopColor="#00A1E0"/>
                   </linearGradient>
                 </defs>
+              </svg>
+            </div>
+            <div className="eng-card__bg eng-card__bg--third">
+              <svg xmlns="http://www.w3.org/2000/svg" width="270" height="200" viewBox="0 0 270 200" fill="none">
+                <path d="M127.75 0C166.368 0.000219974 198.591 27.3803 206.066 63.7871C216.111 59.9895 227 57.9102 238.374 57.9102C288.839 57.9102 329.749 98.8197 329.749 149.284C329.749 199.749 288.839 240.659 238.374 240.659C226.008 240.659 214.216 238.201 203.459 233.749C187.81 288.136 137.684 327.925 78.2627 327.925C6.32057 327.925 -52 269.603 -52 197.661C-51.9999 136.027 -9.19459 84.3936 48.3086 70.8613C52.822 30.9855 86.6674 0 127.75 0Z" fill="white"/>
               </svg>
             </div>
             <h3>A Team That Moves as One</h3>
@@ -171,25 +208,8 @@ export function Engineered() {
             <h3>Your Workflow, Your Way</h3>
             <p>Frequent updates, scalable for any team, and built for security.</p>
           </article>
-
         </div>
-
-        {/* CTA */}
-        <div className="engineered-cta">
-          <p>Get onboard and experience a project management system that actually keeps up with you.</p>
-          <div className="cta-bottom">
-            <h3>It's Free!</h3>
-            <button className="cta-button">
-              Book a Demo
-              <span className="arrow-pill">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                  <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#FF4928"/>
-                </svg>
-              </span>
-            </button>
-          </div>
         </div>
-
       </div>
     </section>
   );
