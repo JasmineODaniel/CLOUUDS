@@ -126,6 +126,19 @@ border: 4px solid #FFF;
   width: 381.749px;
   height: 327.925px;
 }
+.eng-card__bg--fourth {
+  left: -126px;
+  right: auto;
+  width: 490.749px;
+  height: 326px;
+  bottom: -98.32px;
+}
+.eng-card__bg--last {
+  right: -175.71px;
+  bottom: -137.008px;
+  width: 496.444px;
+  height: 367.865px;
+}
 .eng-card--offset {
   grid-column: 2;
 }
