@@ -5,8 +5,8 @@
 }
 
 .engineered-container {
-  width: 100%;
-  margin: 0;
+  max-width: 1160px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -80,7 +80,7 @@
 
 .engineered-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(30px, 1fr));
+  grid-template-columns: repeat(3, minmax(10px, 1fr));
   gap: 12px;
   flex: 1;
   min-width: 0;
