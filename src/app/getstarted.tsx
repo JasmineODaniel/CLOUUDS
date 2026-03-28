@@ -28,17 +28,16 @@ export function GetStarted() {
     <section className="getstarted-section">
       <div className="getstarted-container">
         <h2 className="getstarted-title">
-          Get started in <em>3 steps</em>—no friction,<br />
-          no confusion. Just a smooth takeoff.
+          Get started in <em>3 steps</em>—no friction,
+          no confusion. <br /> Just a smooth takeoff.
         </h2>
         <p className="getstarted-sub">
-          From sign-up to your first project milestone in minutes. We&apos;ve
-          removed every unnecessary step.
+        Every feature exists for a reason. No distractions, no fluff—just the tools you need to keep projects moving forward."
         </p>
 
         <div className="getstarted-visual">
-          {/* Replace with: <img src="/onboarding-screenshot.png" alt="Onboarding" /> */}
-          <div className="getstarted-mockup">[ Onboarding screenshot ]</div>
+           <img src="clouudss.png" alt="Onboarding" />
+         <div className="smallgrid1"> </div>
         </div>
 
         <div className="getstarted-steps">
