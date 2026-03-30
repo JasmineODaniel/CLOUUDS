@@ -2,24 +2,19 @@ import "./getstarted.css";
 
 const steps = [
   {
-    number: "01",
-    title: "Create Your Workspace",
-    desc: "Sign up and set up your team workspace in under 60 seconds. No credit card required.",
+    number: "1",
+    title: "Set Up Your Mission",
+    desc: "Create a workspace, add your crew, and define your first project—all in a few clicks.",
   },
   {
-    number: "02",
-    title: "Invite Your Team",
-    desc: "Add teammates with a single link. Roles and permissions set themselves up automatically.",
+    number: "2",
+    title: "Plot Your Course",
+    desc: "Assign tasks, set deadlines, and organize your workflow without the clutter.",
   },
   {
-    number: "03",
-    title: "Launch Your Project",
-    desc: "Use a template or start from scratch. Your first board is ready to go immediately.",
-  },
-  {
-    number: "04",
-    title: "Track & Ship",
-    desc: "Watch progress in real time. Get notified when it matters. Celebrate when you ship.",
+    number: "3",
+    title: "Launch & Track Progress",
+    desc: "Stay in control with real-time updates, team activity tracking, and smart insights to keep projects moving.",
   },
 ];
 
@@ -44,8 +39,9 @@ export function GetStarted() {
 
             <div className="modal-header">
               <span>New Workspace Setup</span>
-              <img src="close.svg" alt="Close" className="ex"/>
-              <button className="modal-close"></button>
+              <button className="modal-close" aria-label="Close dialog">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
 
             <div className="modal-field">
@@ -94,3 +90,4 @@ export function GetStarted() {
     </section>
   );
 }
+78
