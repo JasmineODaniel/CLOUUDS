@@ -5,13 +5,9 @@
   align-items: flex-end;
   gap: 17px;
   align-self: stretch;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
-  background: radial-gradient(
-    50.17% 50.17% at 50% 50%,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.56) 100%
-  );
+ border-top: 4px solid #FFF;
+border-bottom: 4px solid #FFF;
+background: radial-gradient(50.17% 50.17% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.56) 100%);
 }
 
 .getstarted-container {
@@ -69,6 +65,7 @@ border: 5px solid #FFF;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-4deg);
   width: 315px;
+  height: 313px;
   padding: 20px;
   display: flex;
   flex-direction: column;
