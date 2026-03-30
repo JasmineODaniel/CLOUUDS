@@ -21,7 +21,8 @@ const steps = [
 export function GetStarted() {
   return (
     <section className="getstarted-section">
-      <div className="getstarted-container">
+      <div className="getstarted-panel">
+        <div className="getstarted-container">
 
         <h2 className="getstarted-title">
           Get started in <em>3 steps</em>—no friction,
@@ -85,8 +86,8 @@ export function GetStarted() {
             </div>
           ))}
         </div>
-
       </div>
+    </div>
     </section>
   );
 }
