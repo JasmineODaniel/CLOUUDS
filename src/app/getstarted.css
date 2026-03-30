@@ -146,7 +146,7 @@ border: 5px solid #FFF;
   height: 32px;
  
   border: 2px solid white;
-  margin-left: -6px;
+  
   object-fit: cover;
 }
 
@@ -240,4 +240,3 @@ border: 5px solid #FFF;
     grid-template-columns: 1fr;
   }
 }
- 
