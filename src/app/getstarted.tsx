@@ -88,8 +88,6 @@ export function GetStarted() {
         </div>
       </div>
     </div>
-    </section>
+  </section>
   );
 }
-78
- 
