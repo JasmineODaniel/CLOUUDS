@@ -196,7 +196,7 @@ border: 5px solid #FFF;
   font-size: 18px;
   font-weight: 300;
 }
-
+/* STEPS */
 .getstarted-steps {
   position: relative;
   margin-top: 48px;
@@ -238,6 +238,7 @@ border: 5px solid #FFF;
   color: rgba(18, 17, 15, 0.25);
   line-height: 1;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .step-title {
@@ -246,6 +247,7 @@ border: 5px solid #FFF;
   font-weight: 600;
   color: #12110f;
   letter-spacing: -0.3px;
+  text-align: right;
 }
 
 .step-desc {
@@ -254,6 +256,7 @@ border: 5px solid #FFF;
   color: #6f6f6f;
   line-height: 22px;
   letter-spacing: -0.26px;
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
