@@ -44,7 +44,8 @@ export function GetStarted() {
 
             <div className="modal-header">
               <span>New Workspace Setup</span>
-              <button className="modal-close">✕</button>
+              <img src="close.svg" alt="Close" className="ex"/>
+              <button className="modal-close"></button>
             </div>
 
             <div className="modal-field">
@@ -57,15 +58,17 @@ export function GetStarted() {
               <div className="team-row">
                 <div className="avatars">
                   {/* ADD YOUR AVATAR IMAGES HERE */}
+                  <div className="avatar-placeholder" img src="num5"/>/div>
                   <div className="avatar-placeholder" />
                   <div className="avatar-placeholder" />
                   <div className="avatar-placeholder" />
-                  <div className="avatar-placeholder" />
+                    <div className="avatar-placeholder" />
                 </div>
                 <span className="search-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7B7A78" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+  <path d="M6.21713 0.0164799C9.89718 -0.240855 13.0927 2.53701 13.3501 6.21707C13.6074 9.89712 10.8296 13.0927 7.1495 13.35C3.46944 13.6074 0.273875 10.8295 0.0165401 7.14944C-0.240795 3.46938 2.53707 0.273815 6.21713 0.0164799ZM7.0459 11.8685C9.91039 11.6682 12.0689 9.18515 11.8686 6.32066C11.6682 3.45543 9.18521 1.29768 6.32072 1.49798C3.45549 1.69834 1.29769 4.18061 1.49805 7.04584C1.69835 9.91033 4.18067 12.0689 7.0459 11.8685ZM13.3349 11.4816L15.5769 13.4299L14.6021 14.5514L12.3607 12.6023L13.3349 11.4816Z" fill="#12110F"/>
+</svg>
+               
                 </span>
               </div>
             </div>
