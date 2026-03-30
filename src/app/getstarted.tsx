@@ -58,10 +58,10 @@ export function GetStarted() {
               <div className="team-row">
                 <div className="avatars">
                   <img src="num5.png" alt="Team member 5" className="avatar" />
-                  <img src="num1.png" alt="Team member 1" className="avatar" />
+                  <img src="num4.png" alt="Team member 1" className="avatar" />
                   <img src="num2.png" alt="Team member 2" className="avatar" />
                   <img src="num3.png" alt="Team member 3" className="avatar" />
-                  <img src="num4.png" alt="Team member 4" className="avatar" />
+                  <img src="num1.png" alt="Team member 4" className="avatar" />
                 </div>
                 <span className="search-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
