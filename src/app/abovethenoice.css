@@ -58,6 +58,16 @@
   margin-bottom: 8px;
 }
 
+.atn-sub-first {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.atn-sub-line {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 /* FEATURED TESTIMONIAL CARD */
 .atn-featured {
   background: white;
@@ -240,6 +250,12 @@
  
 }
 
+.atn-bottom-highlight {
+  display: inline-block;
+  margin-left: 0;
+  text-transform: capitalize;
+}
+
 /* REVIEW CARDS */
 .atn-cards {
   display: flex;
@@ -268,6 +284,17 @@
   height: 335px;
   box-sizing: border-box;
   position: relative;
+}
+
+.atn-card-blob {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transform: scale(0.45);
+  opacity: 0.35;
 }
 
 .atn-card-copy {
