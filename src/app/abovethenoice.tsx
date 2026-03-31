@@ -61,25 +61,25 @@ export function AboveTheNoise() {
             </div>
           </div>
           <div className="atn-featured-nav-wrapper">
-                <div className="atn-nav">
-                  <button className="atn-nav-btn atn-nav-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                      <path d="M3.4452 6.1002L8.2728 1.2726L6.9002 0L-0.100098 7.0002L6.9002 14.0004L8.2728 12.7278L3.4452 7.9002H14.4V6.1002H3.4452Z" fill="#12110F"/>
-                    </svg>
-                  </button>
-                  <div className="atn-dots">
-                    <span className="atn-dot atn-dot--active"></span>
-                    <span className="atn-dot"></span>
-                    <span className="atn-dot"></span>
-                    <span className="atn-dot"></span>
-                    <span className="atn-dot"></span>
-                  </div>
-                  <button className="atn-nav-btn atn-nav-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                      <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="white"/>
-                    </svg>
-                  </button>
+              <div className="atn-nav">
+                <button className="atn-nav-btn atn-nav-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                    <path d="M3.4452 6.1002H14.4V7.9002H3.4452L8.2728 12.7278L7.0002 14.0004L0 7.0002L7.0002 0L8.2728 1.2726L3.4452 6.1002Z" fill="#12110F"/>
+                  </svg>
+                </button>
+                <div className="atn-dots">
+                  <span className="atn-dot atn-dot--active"></span>
+                  <span className="atn-dot"></span>
+                  <span className="atn-dot"></span>
+                  <span className="atn-dot"></span>
+                  <span className="atn-dot"></span>
                 </div>
+                <button className="atn-nav-btn atn-nav-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                    <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="white"/>
+                  </svg>
+                </button>
+              </div>
               </div>
 
         {/* BOTTOM SECTION */}
