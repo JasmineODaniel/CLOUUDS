@@ -43,12 +43,9 @@ export function AboveTheNoise() {
           <div className="atn-featured">
             <div className="atn-featured-image">
               <img src="framee.png" alt="Clouuds" />
-              <div className="atn-logo-overlay">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M10 0L12.5 7.5H20L14 12L16.5 20L10 15.5L3.5 20L6 12L0 7.5H7.5L10 0Z" fill="white"/>
-                </svg>
-                <span>Logoipsum</span>
-              </div>
+            <div className="atn-logo-overlay">
+              <img src="/logos%2004.png" alt="Logo 04" className="atn-logo-overlay-img" />
+            </div>
             </div>
 
             <div className="atn-featured-right">
