@@ -1,5 +1,5 @@
 import "./abovethenoice.css";
-
+ 
 export function AboveTheNoise() {
   return (
     <section className="atn-section">
