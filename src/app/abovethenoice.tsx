@@ -34,10 +34,12 @@ export function AboveTheNoise() {
           </div>
 
           <div className="atn-featured-quote">
-            <div className="atn-quote-mark">"</div>
-            <p>
-              Managing multiple projects used to be chaotic, but Clouuds streamlined everything. Our teams collaborate effortlessly, and deadlines are met without the usual stress.
-            </p>
+            <div className="atn-quote-wrapper">
+              <div className="atn-quote-mark">"</div>
+              <p>
+                Managing multiple projects used to be chaotic, but Clouuds streamlined everything. Our teams collaborate effortlessly, and deadlines are met without the usual stress.
+              </p>
+            </div>
           </div>
            </div>
 
