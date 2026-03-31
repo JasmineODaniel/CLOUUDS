@@ -1,5 +1,23 @@
 import "./abovethenoice.css";
- 
+
+const StarIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <path
+      d="M8.00001 10.9998L4.47321 13.1538L5.43201 9.13381L2.29401 6.4458L6.41301 6.1158L8.00001 2.2998L9.58701 6.1158L13.7066 6.4458L10.568 9.13381L11.5268 13.1538L8.00001 10.9998Z"
+      fill="#7B7A78"
+    />
+  </svg>
+);
+
+const HalfStarIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <path
+      d="M8.00001 9.59341L9.69021 10.6254L9.23061 8.69941L10.7348 7.4112L8.76081 7.2528L8.00001 5.4246V9.59341ZM8.00001 10.9998L4.47321 13.1538L5.43201 9.13381L2.29401 6.4458L6.41301 6.1158L8.00001 2.2998L9.58701 6.1158L13.7066 6.4458L10.568 9.13381L11.5268 13.1538L8.00001 10.9998Z"
+      fill="#7B7A78"
+    />
+  </svg>
+);
+
 export function AboveTheNoise() {
   return (
     <section className="atn-section">
@@ -22,109 +40,149 @@ export function AboveTheNoise() {
         </p>
 
         {/* FEATURED TESTIMONIAL */}
-        <div className="atn-featured">
-          <div className="atn-featured-image">
-            <img src="framee.png" alt="Clouuds" />
-            <div className="atn-logo-overlay">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M10 0L12.5 7.5H20L14 12L16.5 20L10 15.5L3.5 20L6 12L0 7.5H7.5L10 0Z" fill="white"/>
-              </svg>
-              <span>Logoipsum</span>
+          <div className="atn-featured">
+            <div className="atn-featured-image">
+              <img src="framee.png" alt="Clouuds" />
+              <div className="atn-logo-overlay">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 0L12.5 7.5H20L14 12L16.5 20L10 15.5L3.5 20L6 12L0 7.5H7.5L10 0Z" fill="white"/>
+                </svg>
+                <span>Logoipsum</span>
+              </div>
             </div>
-          </div>
 
-          <div className="atn-featured-quote">
-            <div className="atn-quote-wrapper">
-              <div className="atn-quote-mark">"</div>
-              <p>
-                Managing multiple projects used to be chaotic, but Clouuds streamlined everything. Our teams collaborate effortlessly, and deadlines are met without the usual stress.
-              </p>
+            <div className="atn-featured-right">
+              <div className="atn-featured-quote">
+                <div className="atn-quote-wrapper">
+                  <div className="atn-quote-mark">"</div>
+                  <p>
+                    Managing multiple projects used to be chaotic, but Clouuds streamlined everything. Our teams collaborate effortlessly, and deadlines are met without the usual stress.
+                  </p>
+                </div>
+              </div>
+              
             </div>
           </div>
-           </div>
-
-          <div className="atn-nav">
-            <button className="atn-nav-btn atn-nav-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                <path d="M3.4452 6.1002L8.2728 1.2726L6.9002 0L-0.100098 7.0002L6.9002 14.0004L8.2728 12.7278L3.4452 7.9002H14.4V6.1002H3.4452Z" fill="#12110F"/>
-              </svg>
-            </button>
-            <div className="atn-dots">
-              <span className="atn-dot atn-dot--active"></span>
-              <span className="atn-dot"></span>
-              <span className="atn-dot"></span>
-              <span className="atn-dot"></span>
-              <span className="atn-dot"></span>
-            </div>
-            <button className="atn-nav-btn atn-nav-next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="white"/>
-              </svg>
-            </button>
-          </div>
-       
+          <div className="atn-featured-nav-wrapper">
+                <div className="atn-nav">
+                  <button className="atn-nav-btn atn-nav-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                      <path d="M3.4452 6.1002L8.2728 1.2726L6.9002 0L-0.100098 7.0002L6.9002 14.0004L8.2728 12.7278L3.4452 7.9002H14.4V6.1002H3.4452Z" fill="#12110F"/>
+                    </svg>
+                  </button>
+                  <div className="atn-dots">
+                    <span className="atn-dot atn-dot--active"></span>
+                    <span className="atn-dot"></span>
+                    <span className="atn-dot"></span>
+                    <span className="atn-dot"></span>
+                    <span className="atn-dot"></span>
+                  </div>
+                  <button className="atn-nav-btn atn-nav-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                      <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
 
         {/* BOTTOM SECTION */}
         <div className="atn-bottom">
+
           <p className="atn-bottom-title">
-            Clouuds keeps you organized and in control, so you can focus on what matters.
+            Clouuds keeps you organized and in control so you can<br />focus on what matters.
           </p>
 
           <div className="atn-cards">
 
-            <div className="atn-card">
-              <div className="atn-stars">★★★★★</div>
-              <div className="atn-card-avatar-placeholder" />
-              <h3>Feels like a productivity cheat code!</h3>
-              <p>"We switched to Space Ship, and our workflow instantly became smoother. No more endless meetings—just real progress."</p>
+            <div className="atn-card-wrapper">
+                <div className="atn-card">
+                  <div className="atn-stars">
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <HalfStarIcon />
+                  </div>
+                <div className="atn-card-copy">
+                  <h3>Feels like a productivity cheat code!</h3>
+                  <p>"We switched to Space Ship, and our workflow instantly became smoother. No more endless meetings—just real progress."</p>
+                </div>
+              </div>
               <div className="atn-card-author">
-                <img src="alex.png" alt="Alex R." className="atn-author-avatar" />
-                <div>
+                <div className="atn-author-text">
                   <span className="atn-author-name">Alex R.,</span>
                   <span className="atn-author-role"> Startup Founder</span>
                 </div>
+                <img src="alex.png" alt="Alex R." className="atn-author-avatar" />
               </div>
             </div>
 
-            <div className="atn-card">
-              <div className="atn-stars">★★★★★</div>
-              <div className="atn-card-avatar-placeholder" />
-              <h3>The only tool my team actually enjoys using.</h3>
-              <p>"It's simple, intuitive, and fun. Space Ship makes managing projects feel less like work and more like a mission."</p>
+            <div className="atn-card-wrapper">
+                <div className="atn-card">
+                  <div className="atn-stars">
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <HalfStarIcon />
+                  </div>
+                <div className="atn-card-copy">
+                  <h3>The only tool my team actually enjoys using.</h3>
+                  <p>"It's simple, intuitive, and fun. Space Ship makes managing projects feel less like work and more like a mission."</p>
+                </div>
+              </div>
               <div className="atn-card-author">
-                <img src="jordan.png" alt="Jordan M." className="atn-author-avatar" />
-                <div>
+                <div className="atn-author-text">
                   <span className="atn-author-name">Jordan M.,</span>
                   <span className="atn-author-role"> Product Manager</span>
                 </div>
+                <img src="jordan.png" alt="Jordan M." className="atn-author-avatar" />
               </div>
             </div>
 
-            <div className="atn-card">
-              <div className="atn-stars">★★★★★</div>
-              <div className="atn-card-avatar-placeholder" />
-              <h3>From scattered tasks to seamless execution.</h3>
-              <p>"We used to juggle spreadsheets and sticky notes—now everything's in one place. Tracking progress has never been this easy."</p>
+            <div className="atn-card-wrapper">
+                <div className="atn-card">
+                  <div className="atn-stars">
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <HalfStarIcon />
+                  </div>
+                <div className="atn-card-copy">
+                  <h3>From scattered tasks to seamless execution.</h3>
+                  <p>"We used to juggle spreadsheets and sticky notes—now everything's in one place. Tracking progress has never been this easy."</p>
+                </div>
+              </div>
               <div className="atn-card-author">
-                <img src="samantha.png" alt="Samantha K." className="atn-author-avatar" />
-                <div>
+                <div className="atn-author-text">
                   <span className="atn-author-name">Samantha K.,</span>
                   <span className="atn-author-role"> Design Lead</span>
                 </div>
+                <img src="samantha.png" alt="Samantha K." className="atn-author-avatar" />
               </div>
             </div>
 
-            <div className="atn-card">
-              <div className="atn-stars">★★★★★</div>
-              <div className="atn-card-avatar-placeholder" />
-              <h3>Takes the stress out of project deadlines.</h3>
-              <p>"Deadlines used to feel like a black hole. Now, we actually stay ahead of schedule without the burnout."</p>
+            <div className="atn-card-wrapper">
+                <div className="atn-card">
+                  <div className="atn-stars">
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <StarIcon />
+                    <HalfStarIcon />
+                  </div>
+                <div className="atn-card-copy">
+                  <h3>Takes the stress out of project deadlines.</h3>
+                  <p>"Deadlines used to feel like a black hole. Now, we actually stay ahead of schedule without the burnout."</p>
+                </div>
+              </div>
               <div className="atn-card-author">
-                <img src="daniel.png" alt="Daniel T." className="atn-author-avatar" />
-                <div>
+                <div className="atn-author-text">
                   <span className="atn-author-name">Daniel T.,</span>
                   <span className="atn-author-role"> Marketing Director</span>
                 </div>
+                <img src="daniel.png" alt="Daniel T." className="atn-author-avatar" />
               </div>
             </div>
 
