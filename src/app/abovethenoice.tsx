@@ -135,15 +135,7 @@ export function AboveTheNoise() {
                   </div>
                 <div className="atn-card-copy">
                   <h3>The only tool my team actually enjoys using.</h3>
-                  <p>
-                    Its simple, intuitive, and fun.
-                    <br />
-                    Space Ship makes managing
-                    <br />
-                    projects feel less like work and
-                    <br />
-                    more like a mission.
-                  </p>
+                  <p>"We switched to Space Ship, and our workflow instantly became smoother. No more endless meetings—just real progress."</p>
                 </div>
               </div>
               <div className="atn-card-author">
@@ -166,7 +158,7 @@ export function AboveTheNoise() {
                   </div>
                 <div className="atn-card-copy">
                   <h3>From scattered tasks to seamless execution.</h3>
-                  <p>"We used to juggle spreadsheets and sticky notes—now everything's in one place. Tracking progress has never been this easy."</p>
+                  <p>"We switched to Space Ship, and our workflow instantly became smoother. No more endless meetings—just real progress."</p>
                 </div>
               </div>
               <div className="atn-card-author">
