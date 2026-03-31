@@ -44,7 +44,7 @@ export function AboveTheNoise() {
             <div className="atn-featured-image">
               <img src="framee.png" alt="Clouuds" />
             <div className="atn-logo-overlay">
-              <img src="/logos%2004.png" alt="Logo 04" className="atn-logo-overlay-img" />
+              <img src="/logos04.svg" alt="Logo 04" className="atn-logo-overlay-img" />
             </div>
             </div>
 
@@ -86,7 +86,7 @@ export function AboveTheNoise() {
         <div className="atn-bottom">
 
           <p className="atn-bottom-title">
-            Clouuds keeps you organized and in control so you can<br />focus on what matters.
+            Clouuds keeps you organized and in control so you can<br />Changing focus on what matters.
           </p>
 
           <div className="atn-cards">
