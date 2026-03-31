@@ -276,7 +276,7 @@
   background: radial-gradient(
       50.17% 50.17% at 50% 50%,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.56) 100%
+      rgba(207, 207, 207, 0.56) 100%
     )
     #d8d8d8;
   border-radius: 24px;
@@ -310,16 +310,8 @@
   object-fit: cover;
 }
 
-.atn-card-copy {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+.atn-card-blob.alt svg {
+  height: 85%;
 }
 
 .atn-card-copy {
@@ -330,6 +322,8 @@
   align-items: center;
   width: 100%;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .atn-stars {
@@ -341,6 +335,7 @@
   right: 16px;
   display: flex;
   gap: 4px;
+  z-index: 2;
 }
 
 .atn-card h3 {
