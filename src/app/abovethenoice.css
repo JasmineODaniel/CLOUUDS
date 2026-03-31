@@ -105,18 +105,27 @@ height: 305px;
 
 .atn-featured-quote {
   display: flex;
+  padding: 24px;
   flex-direction: column;
-  gap: 12px;
-  padding-top: 8px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.atn-quote-wrapper {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
   display: flex;
-padding: 24px;
-flex-direction: column;
-justify-content: flex-end;
-align-items: flex-start;
-flex: 1 0 0;
-align-self: stretch;
-border-radius: 24px;
-background: #FFF;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.08);
 }
 
 .atn-quote-mark {
