@@ -36,7 +36,11 @@ export function AboveTheNoise() {
         </h2>
 
         <p className="atn-sub">
-          Getting things done has never felt this smooth. See how Clouuds is changing the game.
+          <span className="atn-sub-first">
+            Getting things done has never felt this smooth. See how Clouuds is
+          </span>
+          <br />
+          <span className="atn-sub-line">changing the game.</span>
         </p>
 
         {/* FEATURED TESTIMONIAL */}
@@ -86,13 +90,19 @@ export function AboveTheNoise() {
         <div className="atn-bottom">
 
           <p className="atn-bottom-title">
-            Clouuds keeps you organized and in control so you can<br />Changing focus on what matters.
+            Clouuds keeps you organized and in control so you can<br />
+            <span className="atn-bottom-highlight">Focus</span> on what matters.
           </p>
 
           <div className="atn-cards">
 
             <div className="atn-card-wrapper">
                 <div className="atn-card">
+                  <div className="atn-card-blob" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="270" height="292" viewBox="0 0 270 292" fill="none">
+                      <path d="M317.293 112.944C371.28 149.28 385.588 222.5 349.253 276.487C313.08 330.23 240.356 344.65 186.441 308.931C142.034 350.033 73.6773 356.862 21.3 321.61C-1.79463 306.066 -18.4772 284.562 -28.0841 260.525C-53.9087 261.018 -80.1368 253.859 -103.192 238.342C-162.875 198.173 -178.693 117.226 -138.524 57.543C-98.3542 -2.14013 -17.4072 -17.9595 42.2759 22.21C63.4429 36.4564 79.0902 55.8334 88.6817 77.5703C116.654 76.0483 145.335 83.2833 170.366 100.131C176.029 103.942 181.306 108.111 186.188 112.588C224.732 86.9486 276.503 85.4901 317.293 112.944Z" fill="white"/>
+                    </svg>
+                  </div>
                   <div className="atn-stars">
                     <StarIcon />
                     <StarIcon />
@@ -110,7 +120,7 @@ export function AboveTheNoise() {
                   <span className="atn-author-name">Alex R.,</span>
                   <span className="atn-author-role"> Startup Founder</span>
                 </div>
-                <img src="alex.png" alt="Alex R." className="atn-author-avatar" />
+                <img src="/person4.svg" alt="Alex R." className="atn-author-avatar" />
               </div>
             </div>
 
@@ -125,7 +135,15 @@ export function AboveTheNoise() {
                   </div>
                 <div className="atn-card-copy">
                   <h3>The only tool my team actually enjoys using.</h3>
-                  <p>"It's simple, intuitive, and fun. Space Ship makes managing projects feel less like work and more like a mission."</p>
+                  <p>
+                    Its simple, intuitive, and fun.
+                    <br />
+                    Space Ship makes managing
+                    <br />
+                    projects feel less like work and
+                    <br />
+                    more like a mission.
+                  </p>
                 </div>
               </div>
               <div className="atn-card-author">
@@ -133,7 +151,7 @@ export function AboveTheNoise() {
                   <span className="atn-author-name">Jordan M.,</span>
                   <span className="atn-author-role"> Product Manager</span>
                 </div>
-                <img src="jordan.png" alt="Jordan M." className="atn-author-avatar" />
+                <img src="/person3.svg" alt="Jordan M." className="atn-author-avatar" />
               </div>
             </div>
 
@@ -156,7 +174,7 @@ export function AboveTheNoise() {
                   <span className="atn-author-name">Samantha K.,</span>
                   <span className="atn-author-role"> Design Lead</span>
                 </div>
-                <img src="samantha.png" alt="Samantha K." className="atn-author-avatar" />
+                <img src="/person2.svg" alt="Samantha K." className="atn-author-avatar" />
               </div>
             </div>
 
@@ -179,7 +197,7 @@ export function AboveTheNoise() {
                   <span className="atn-author-name">Daniel T.,</span>
                   <span className="atn-author-role"> Marketing Director</span>
                 </div>
-                <img src="daniel.png" alt="Daniel T." className="atn-author-avatar" />
+                <img src="/person1.svg" alt="Daniel T." className="atn-author-avatar" />
               </div>
             </div>
 
