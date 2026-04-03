@@ -1,4 +1,4 @@
-import "./getstarted.css";
+ import "./getstarted.css";
 
 const steps = [
   {
