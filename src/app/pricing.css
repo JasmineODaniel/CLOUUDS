@@ -150,7 +150,7 @@
   border-radius: 16px;
   border: 4px solid #FF5132;
   background: #FFF;
-  padding: 160px 24px 24px;
+  padding: 24px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.06);
@@ -186,7 +186,13 @@
 
 .pricing-card--pro .pricing-most-popular {
   display: block;
-  color: white;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
 }
 
 .pricing-card--pro .pricing-plan-name {
@@ -252,9 +258,12 @@
 }
 
 .pricing-card--pro .pricing-card-mid {
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 24px;
   align-self: stretch;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .pricing-plan-name {
