@@ -144,8 +144,28 @@
 }
 
 .pricing-card--pro {
-  border: 5px solid #FF5132;
+  border: 5px solid #FFF;
+  background: #F5F5F5;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card--pro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 102px;
   background: linear-gradient(180deg, #FF5132 0%, rgba(255, 255, 255, 0.00) 100%);
+  border-radius: 11px 11px 0 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pricing-card--pro > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* CARD TOP */
