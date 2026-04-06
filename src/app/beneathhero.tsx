@@ -1,4 +1,4 @@
-import styles from "./beneathhero.module.css"; 
+ import styles from "./beneathhero.module.css"; 
 
 const logos = [
   "/logos 06.svg",
