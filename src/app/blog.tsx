@@ -74,7 +74,7 @@ const posts: BlogPost[] = [
     category: "PRODUCTIVITY",
     title: "5 Ways to Streamline and Improve Your Team's Workflow and Efficiency.",
     excerpt: "Discover how to cut inefficiencies and boost productivity with these proven strategies. From task prioritization to automation, we've got you covered.",
-    image: "/images/blog-hero.jpg",
+    image: "SKYYY.png",
     icon: "save",
   },
   {
