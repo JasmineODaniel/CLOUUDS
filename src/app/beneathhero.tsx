@@ -5,7 +5,7 @@ const logos = [
   "/logos 05.svg",
   "/logos 04.svg",
   "/logos 03.svg",
-  "/logos 02.svg",
+  "/logos 02.svg", 
   "/logos 01.svg",
 ];
 
