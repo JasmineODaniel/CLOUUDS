@@ -82,13 +82,14 @@ font-family: var(--font-inter);
 .hero-section {
  
   width: 100%;
-  background:
-   
-     lightgray 0% 0% / 100px 100px repeat,
-    url("/cloudcover.png") center/cover no-repeat,
-     url("/cloudimg.png") center/cover no-repeat,
-      linear-gradient(180deg, #12110F 0%, rgba(18, 17, 15, 0.00) 100%);
-   
+  background-color: #12110F;
+  background-image:
+    url("/cloudcover.png"),
+    url("/cloudimg.png"),
+    linear-gradient(180deg, #12110F 0%, rgba(18, 17, 15, 0) 100%);
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-position: center top, center center, center center;
+  background-size: 100px 100px, cover, cover;
   padding: 140px 72px 96px;
   display: flex;
   flex-direction: column;
