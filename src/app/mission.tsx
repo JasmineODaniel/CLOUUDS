@@ -226,8 +226,8 @@ export function Mission() {
   <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
   <defs>
     <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7B7A78"/>
-      <stop offset="1" stop-color="#12110F"/>
+      <stop stopColor="#7B7A78"/>
+      <stop offset="1" stopColor="#12110F"/>
     </linearGradient>
   </defs>
 </svg>Kick-off meeting</div>   
@@ -235,8 +235,8 @@ export function Mission() {
   <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
   <defs>
     <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7B7A78"/>
-      <stop offset="1" stop-color="#12110F"/>
+      <stop stopColor="#7B7A78"/>
+      <stop offset="1" stopColor="#12110F"/>
     </linearGradient>
   </defs>
 </svg>New Website </div>
