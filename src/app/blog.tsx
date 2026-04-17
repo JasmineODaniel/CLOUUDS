@@ -1,6 +1,6 @@
 import React from "react";
 import "./blog.css";
-
+ 
 // SVG Icons
 const SaveIcon = () => ( 
 <svg xmlns="http://www.w3.org/2000/svg" width="133" height="139" viewBox="0 0 133 139" fill="none">
