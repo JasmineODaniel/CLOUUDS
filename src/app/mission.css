@@ -1,274 +1,702 @@
-import "./mission.css";
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-export function Mission() {
-  return (
-    <section className="mission-section" id="features">
-      <div className="mission-container">
+.mission-section{
+padding:56px;
+display:flex;
+justify-content:center; 
+background:#F5F5F5;
+border-radius:40px;
+}
 
-        {/* HEADER */}
-        <div className="mission-header">
+.mission-container{
+max-width:1180px;
+width:100%;
+display:flex;
+flex-direction:column;
+gap:48px;
+}
 
-          <div className="mission-badge">
+.mission-header{
+display:flex;
+align-items:center;
+gap:8px;
+background:white;
+border:1px solid #eee;
+padding:6px 12px;
+border-radius:20px;
+width: 120px;
+height: 38px;
+}
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-  <path d="M3.1875 0C3.60609 0 4.02058 0.0824472 4.40731 0.242634C4.79403 0.402821 5.14542 0.63761 5.44141 0.933597C5.73739 1.22958 5.97218 1.58097 6.13237 1.9677C6.29255 2.35442 6.375 2.76891 6.375 3.1875V6.375H3.1875C2.34212 6.375 1.53137 6.03918 0.933599 5.4414C0.335826 4.84363 1.36289e-06 4.03288 1.36289e-06 3.1875C1.36289e-06 2.34212 0.335826 1.53137 0.933599 0.933597C1.53137 0.335825 2.34212 0 3.1875 0V0ZM3.1875 7.875H6.375V11.0625C6.375 11.6929 6.18806 12.3092 5.83781 12.8334C5.48756 13.3576 4.98974 13.7661 4.40731 14.0074C3.82487 14.2486 3.18397 14.3117 2.56565 14.1888C1.94734 14.0658 1.37938 13.7622 0.933599 13.3164C0.487819 12.8706 0.184239 12.3027 0.0612484 11.6844C-0.061742 11.066 0.00138109 10.4251 0.242635 9.8427C0.48389 9.26026 0.892439 8.76244 1.41662 8.41219C1.9408 8.06194 2.55707 7.875 3.1875 7.875V7.875ZM11.0625 0C11.9079 0 12.7186 0.335825 13.3164 0.933597C13.9142 1.53137 14.25 2.34212 14.25 3.1875C14.25 4.03288 13.9142 4.84363 13.3164 5.4414C12.7186 6.03918 11.9079 6.375 11.0625 6.375H7.875V3.1875C7.875 2.34212 8.21083 1.53137 8.8086 0.933597C9.40637 0.335825 10.2171 0 11.0625 0V0ZM7.875 7.875H11.0625C11.6929 7.875 12.3092 8.06194 12.8334 8.41219C13.3576 8.76244 13.7661 9.26026 14.0074 9.8427C14.2486 10.4251 14.3117 11.066 14.1888 11.6844C14.0658 12.3027 13.7622 12.8706 13.3164 13.3164C12.8706 13.7622 12.3027 14.0658 11.6844 14.1888C11.066 14.3117 10.4251 14.2486 9.8427 14.0074C9.26026 13.7661 8.76244 13.3576 8.41219 12.8334C8.06195 12.3092 7.875 11.6929 7.875 11.0625V7.875Z" fill="#FF5132"/>
-</svg>
+.mission-badge span{
+  color: #7B7A78;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+padding-left: 15px;
+}
 
-            <span>Features</span>
-          </div>
-          </div>
+.mission-title{
+color: #12110F;
+font-family: "Instrument Serif";
+font-size: 56px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 107.143% */
+letter-spacing: -2.24px;
+align-self: stretch;
+}
 
-          <div className="mission-title">
-            Mission <span>Control</span> for Your Workflow.
-          </div>
-        
+.mission-title span{
+color: #7B7A78;
+font-family: "Instrument Serif";
+font-size: 56px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px;
+letter-spacing: -2.24px;
+width: 101px;
+height: 28px;
+}
 
-        {/* TOP ROW */}
+.mission-row{
+display:flex;
+align-items:flex-start;
+gap:32px;
+}
 
-        <div className="mission-row">
+.mission-description{
+color: #7B7A78;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.6px;
+width: 270px;
+height: 291px;
+}
 
-          <p className="mission-description">
-            From takeoff to landing, stay in control with intuitive task
-            management, team collaboration, and automated progress tracking.
-          </p>\
+.mission-cards{
+display:flex;
+gap:20px;
+flex-wrap:nowrap;
+}
 
-          <div className="mission-cards">
+.mission-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
 
-            {/* CARD 1 */}
-            <article className="mission-card">
+.mission-card{
+background:white;
+border-radius:24px;
+border:4px solid #fff;
+min-height:260px;
+overflow:hidden;
+display: flex;
+width: 270px;
+height: 291px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+border-radius: 24px;
+border: 4px solid #FFF;
+background: radial-gradient(50.17% 50.17% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.56) 100%);
+}
 
-              <div className="pill-stack">
+.cardfour {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
 
-                <div className="pill-progress">
+.cardfour-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
 
-                  <span className="pill-icon">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-  <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#7B7A78"/>
-</svg>
-
-                  </span>
-                 
-
-                  <div className="pill-input">
-                    30 progress
-                  </div>
-
-              
-             
-                  </div>
-
-                <div className="pill-completed">
-
-                  <span className="check-icon">
-
-     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_543_32)" stroke="white"/>
-  <defs>
-    <linearGradient id="paint0_linear_543_32" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stopColor="#FF5132"/>
-      <stop offset="1" stopColor="#FFCC32"/>
-    </linearGradient>
-  </defs>
-</svg>
-
-                  </span>
-
-                  Completed
-                </div>
-
-        </div>
-              <div className="card-copy">
-                <h3>Stay on Top of Projects</h3>
-                <p>Organize and track tasks.</p>
-              </div>
-
-            </article>
-
-            {/* CARD 2 */}
-
-            <article className="mission-card">
-
-              <div className="profile-frame">
-
-                
-
-                <div className="profile-avatar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-  <path d="M9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18ZM8.1027 12.6L14.4657 6.2361L13.1931 4.9635L8.1027 10.0548L5.5566 7.5087L4.284 8.7813L8.1027 12.6Z" fill="#DDDDDD"/>
-</svg>
-                </div>
-                
-               <div className="avatar-main-wrapper">
-  <img className="profile-avatar-main" src="avatar.png" alt="Profile" />
-  <svg className="avatar-badge" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="#FF5132" stroke="white"/>
-</svg> 
-</div>
-                <div className="profile-avatar2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-  <path d="M9 18C4.0293 18 0 13.9707 0 9C0 4.0293 4.0293 0 9 0C13.9707 0 18 4.0293 18 9C18 13.9707 13.9707 18 9 18ZM8.1027 12.6L14.4657 6.2361L13.1931 4.9635L8.1027 10.0548L5.5566 7.5087L4.284 8.7813L8.1027 12.6Z" fill="#DDDDDD"/>
-</svg>
-                </div>
-
-                
-
-              </div>
-
-              <div className="card-copy">
-                <h3>Assign Tasks with Clarity</h3>
-                <p>Easily assign and manage tasks.</p>
-              </div>
-
-            </article>
-
-            {/* CARD 3 */}
-
-            <article className="mission-card">
-
-              <div className="upcoming-card">
-                <div className="upcoming-small">
-                  <div className="upcoming-checkbox">
-                   <svg className="svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM9.10254 11.7617L6.55664 9.21582L5.99121 9.78125L9.10254 12.8926L14.7588 7.23633L14.1934 6.6709L9.10254 11.7617Z" fill="url(#paint0_linear_464_38)" stroke="white"/>
-  <defs>
-    <linearGradient id="paint0_linear_464_38" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stopColor="#32A2FF"/>
-      <stop offset="1" stopColor="#3265FF"/>
-    </linearGradient>
-  </defs>
-</svg>
-                
-                 
-                <span>  Upcoming </span>
-                </div>
-                
-
-                <div className="pill">Review Designs</div>
-
-                <div className="upcoming-row">
-               
-                  <span>Doing</span>
-                  <span><svg className="doing-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-  <path d="M9.129 5.0835L5.106 1.0605L6.1665 0L12 5.8335L6.1665 11.667L5.106 10.6065L9.129 6.5835H0V5.0835H9.129Z" fill="#7B7A78"/>
-</svg></span>
-                </div>
-
-              </div>
-              </div>
-
-              <div className="card-copy">
-                <h3>Set Priorities & Deadlines</h3>
-                <p>Keep projects on track.</p>
-              </div>
-
-            </article>
-
-          </div>
-
-        </div>
-
-        {/* BOTTOM GRID */}
-
-        <div className="mission-grid">
-
-          <article className="mission-card">
-            <div className="placeholder"></div>
-            <div className="cardfour">
-              <div className="cardfour-heading">
-                <img className="card44" src="card4.png" alt="Feeebrick celebration" />
-                <span className="cardfour-title">Feeebrick</span>
-              </div>
-              <p>Great work, Team! Launch ready... 🎉</p>
-            </div>
-            <div className="smallcard4">
-              <img className="smallcard1" src="smallcard2.png" alt="Feeebrick celebration" />
-              <img className="smallcard2" src="smallcard1.png" alt="Feeebrick celebration" />
-              <div className="smallcard3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none">
-  <circle cx="4.5" cy="1.5" r="1.5" fill="white"/>
-  <circle cx="10.5" cy="2.5" r="1.5" fill="white"/>
-  <circle cx="16.5" cy="2.5" r="1.5" fill="white"/>
-</svg></div> 
-            </div>
-            <div className="card-copy">
-
-              <h3>Collaborate Without the Chaos</h3>
-              <p>Chat, comment, and share files.</p>
-
-          
-            </div>
-          </article>
-
-          <article className="mission-card">
-            <div className="progress-wrapper">
-              <img src="circle.svg" className="circle" alt="Progress circle" />
-              <div className="progress-ring">
-                <div className="progress-value">82%</div>
-                <div className="progress-label">Progress</div>
-              </div>
-            </div>
+.pill-stack{
+padding:24px;
+display:flex;
+flex-direction:column;
+gap:12px;
+padding: 24px 24px 50px 24px; 
+}
 
 
-            <div className="card-copy">
-              <h3>Track Progress & Insights</h3>
-              <p>Stay informed with analytics.</p>
-            </div>
-          </article>
 
-          <article className="mission-card">
+.check-icon{
+  display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+background: rgba(255, 81, 50, 0.08);
+}
+.pill-progress,
+.pill-completed{
+color: #12110F;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+display: flex;
+height: 54px;
+padding: 8px 17px 8px 12px;
+align-items: center;
+gap: 14px;
+align-self: stretch;
+border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 100);
+width: 199px;
+height: 54px;
+ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.10);
+}
 
-            <div className="schedule">
-            <h4> Jan 12</h4> 
-          
-<div className="schedule2"> 
-  <div className="schedule2-item">
-    <div className="para1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
-  <defs>
-    <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stopColor="#7B7A78"/>
-      <stop offset="1" stopColor="#12110F"/>
-    </linearGradient>
-  </defs>
-</svg>Kick-off meeting</div>   
-    <div className="para2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M10 0.5C15.2468 0.5 19.5 4.75316 19.5 10C19.5 15.2468 15.2468 19.5 10 19.5C4.75316 19.5 0.5 15.2468 0.5 10C0.5 4.75316 4.75316 0.5 10 0.5ZM8.7002 12.665L12.6992 10L8.7002 7.33496V12.665Z" fill="url(#paint0_linear_547_48)" stroke="white"/>
-  <defs>
-    <linearGradient id="paint0_linear_547_48" x1="1" y1="1" x2="19" y2="19" gradientUnits="userSpaceOnUse">
-      <stop stopColor="#7B7A78"/>
-      <stop offset="1" stopColor="#12110F"/>
-    </linearGradient>
-  </defs>
-</svg>New Website </div>
-  </div>
-</div>
-  </div>
-            <div className="card-copy">
-              
-              <h3> A Seamless Experience</h3>
-              <p>Smooth, sleek, responsive design.</p>
-            </div>
+.pill-input{
+  color: #7B7A78;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+display: flex;
+height: 37px;
+padding: 10px;
+align-items: center;
+gap: 10px;
+flex: 1 0 0;
+border-radius: 10px;
+background: #F0F0F0;
 
-          </article>
-<article className="cta">
-  <p>Get onboard and experience a project management system that actually keeps up with you</p>
+}
+
+
+.card-copy{
+display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+background-color: #ececec;
+}
+
+.card-copy h3{
+font-size:16px;
+font-weight:600;
+color: #12110F;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.64px;
+}
+
+.card-copy p{
+
+color: #7B7A78;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px; /* 121.429% */
+letter-spacing: -0.56px;
+}
+
+.profile-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 30px 30 23px;
+  flex: 1;
+}
+
+.profile-avatar,
+.profile-avatar2 {
+   justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 24px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 100);
+  z-index: 1;
+  width: 67px;
+height: 67px;
+flex-shrink: 0;
+box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.avatar-main-wrapper {
+  position: relative;
+  z-index: 2;
+  margin: 0 -20px;
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 15px;        
+  left: 50%;       
+  transform: translateX(-50%); 
+}  
+.upcoming-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.upcoming-small {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 1);
+  width: 210px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  color: #12110F;
+  letter-spacing: -0.56px;
+}
+
+.upcoming-checkbox {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(50, 101, 255, 0.08);
+  flex-shrink: 0;
+  z-index: 1;
+  position: relative;
+aspect-ratio: 1/1;
+}
+.upcoming-checkbox .svg {
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  position: absolute;
+}
+.upcoming-checkbox span{
+  color: #7B7A78;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+padding-left:8rem;
+}
+
+.pill {
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  color: #12110F;
+  letter-spacing: -0.56px;
+  display: flex;
+height: 37px;
+padding: 10px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 10px;
+background: #FFF;
+ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.upcoming-row {
+ display: flex;
+height: 37px;
+padding: 10px;
+align-items: center;
+gap: 100px;
+align-self: stretch;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+.upcoming-row span {
+  color: #7B7A78;color: #7B7A78;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+.upcoming-row .doing-arrow {
+ width: 12px;
+height: 11.667px;
+}
+.cardfour{
+  display: flex;
+  height: 90px;
+  padding: 8px 17px 8px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 34px 0 #E8E8E8;
+  width: 199px;
+  height: 90px;
+  margin: 0 20px 10px 30px;
+}
+.cardfour-heading{
+  display:flex;
+  align-items:center;
+  gap:8px;
   
-  <div className="cta-bottom">
-    <h3>It's Free!</h3>
-    <button>
-      Book a Demo
-      <span className="arrow-pill">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-          <path d="M10.9548 6.1002L6.1272 1.2726L7.3998 0L14.4 7.0002L7.3998 14.0004L6.1272 12.7278L10.9548 7.9002H0V6.1002H10.9548Z" fill="#FF4928"/>
-        </svg>
-      </span>
-    </button>
-  </div>
-</article>
+}
 
-        </div>
+.card44{
+  border-radius: 8px;
+background:  lightgray 50% / cover no-repeat;
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+}
 
-      </div>
-    </section>
-  );
+.cardfour-title{
+  
+ 
+  margin: 0;
+  color: #12110F;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+.cardfour h4{
+  color: #12110F;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+.cardfour p{
+  color: #7B7A78;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.56px;
+}
+.smallcard4 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  border-radius: 16px;
+border: 2px solid #FFF;
+ background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 4px 34px 0 #E8E8E8;
+  height: 46px;
+  min-width: 90px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.smallcard1,
+.smallcard2,
+.smallcard3 {
+  width: 42px;
+  height: 42px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  position: relative;
+  object-fit: cover;
+}
+
+.smallcard1 {
+  z-index: 1;
+ 
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background:  lightgray 50% / cover no-repeat, rgba(27, 210, 136, 0.11);
+  margin-left: 0;
+}
+
+.smallcard2 {
+  z-index: 3;
+  margin-left: -10px;
+  width: 28px;
+height: 28px;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background:  lightgray 50% / cover no-repeat, rgba(27, 210, 136, 0.11);
+}
+
+.smallcard3 {
+  z-index: 4;
+  margin-left: -10px;
+   transform: translateX(-2px);
+   display: flex;
+width: 28px;
+height: 28px;
+padding: 0 4px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+border: 1px solid #FFF;
+background: #FF5132;
+}
+.progress-wrapper{
+  position: relative;
+  width: 200px;
+  margin: 20px auto 0;
+  height: 200px;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 136px;
+  display: block;
+  fill-opacity: white;
+  filter: drop-shadow(0 4px 34px #E8E8E8);
+}
+
+.progress-ring{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  flex-direction: column;
+  display: inline-flex;
+padding: 22.32px 22px 21.68px 23px;
+border-radius: 70px;
+border: 2px solid #FFF;
+background: #FFF;
+margin-top: 3px;
+}
+
+.progress-label{
+  color: #7B7A78;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.4px;
+top: 10px;
+
+}
+.progress-value{
+  color: #12110F;
+text-align: center;
+font-family: "Instrument Serif";
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1px;
+}
+.schedule{
+  display: flex;
+width: 224px;
+height: 146px;
+padding: 4px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+gap: -1px;
+border-radius: 16px;
+border: 2px solid #FFF;
+background: rgba(255, 255, 255, 0.08);
+box-shadow: 0 4px 34px 0 #E8E8E8;
+margin: 0 0 25px 20px;
+
+}
+.schedule h4{
+  color: #333333;
+leading-trim: both;
+text-edge: cap;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.64px;
+margin-bottom: 10px;
+margin-left: 10px;
+}
+.schedule2{
+  display: flex;
+padding: 8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+border-radius: 18px 18px 12px 12px;
+border: 2px solid #F1F1F1;
+background: #FFF;
+box-shadow: 0 -3px 16px 0 #F7F7F7;
+width: 216px;
+height: 96px;
+right: 10px;
+}
+.schedule2 .para1,
+.schedule2 .para2 {
+  color: #12110F;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.schedule2 .para1 svg{
+  display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+background: rgba(131, 131, 131, 0.08);
+}
+.schedule2 .para2 svg{
+display: flex;
+width: 36px;
+height: 36px;
+padding: 6px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+border-radius: 8px;
+background: rgba(131, 131, 131, 0.08);
+margin-top: 5px;
+}
+ .cta-bottom {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  
+}
+
+.cta{
+  margin-top: 80px;
+}
+
+.cta-bottom h3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: #12110F;
+  white-space: nowrap;
+  margin-top: 25px;
+}
+
+.cta button {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  padding: 4px 4px 4px 16px;  /* small right padding so pill hugs the edge */
+  border-radius: 16px;
+  background: #FF4928;
+  border: none;
+  box-shadow: 0 0 0 2px #676766, 0 0 0 4px #12110F;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+  margin-top: 25px;
+  gap: 0;
+  justify-content: space-between; /* text left, pill right */
+}
+
+.arrow-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: #F5F5F5;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.cta p {
+  color: #7B7A78;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  width: 270px;
 }
