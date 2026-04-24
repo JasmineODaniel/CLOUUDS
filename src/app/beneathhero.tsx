@@ -2,7 +2,7 @@ import styles from "./beneathhero.module.css";
 
 const logos = [
   "/logos 06.svg",
-  "/logos 05.svg",
+  "/logos 05.svg", 
   "/logos 04.svg",
   "/logos 03.svg",
   "/logos 02.svg",
